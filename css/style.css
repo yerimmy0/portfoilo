@@ -1,0 +1,929 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+/* 전체설정 */
+* {margin: 0;
+padding: 0;}
+ul, ol {list-style: none;}
+a {text-decoration: none;
+color: #000;}
+img {border: none;
+vertical-align: bottom;}
+
+body    {
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 32px;
+        color: #1a1a1a;
+        }
+
+
+        /* header설정 */
+        header {padding: 20px 0;
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;}
+/* 로고설정 */
+.logo   {
+        width: 244px;
+        height: 61px;
+        background-image: url(../img/seoul_logo.jpg);
+        text-indent: -9999px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        }
+
+/* gnb 설정 */
+.gnb {}
+.gnb ul {display: flex;}
+.gnb ul li {font-size: 20px;}
+.gnb ul li a {
+                margin: 15px 0;
+                padding: 5px 60px;
+                display: block;
+                color: #1a1a1a;
+                border-right: 1px solid #ccc;
+                }
+.gnb ul {margin-right: -5px;}
+.gnb ul li:last-child a {border:none}
+.gnb li:hover   {
+                color: #2B5A0A;
+                font-weight: bold;
+                }
+
+/* hero설정 */
+.hero   {
+        width: 100%;
+        height: 80vh; /* vh는 화면의 80%정도를 차지함을 뜻함 */
+        overflow: hidden;
+        position: relative;
+        }
+.hero img       {
+                width: 100%;
+                transform: translateY(-300px);
+                }
+
+/* hero 화살표설정 */
+.hero span {
+        position: absolute;
+        top: 45%;
+        font-weight: bold;
+        display: block;
+        font-size: 28px;
+        color: #fff;
+        cursor: pointer;
+        opacity: 50%;
+        }
+.hero .left {left:2%;}
+.hero .right {right: 2%;}           
+.hero span:hover {
+                color: #fff;
+                opacity: 100%;
+                }
+.hero_txt   {
+        position: absolute;
+        width: 800px;
+        font-weight: bold;
+        font-size: 48px;
+        color: #fff;
+        left:50%;
+        margin-left: -400px;
+        top:38%;
+        text-align: center;
+        line-height: 65px;
+        }
+.circle {
+        position: absolute;
+        width: 20px;
+        left: 2%;
+        top: 5%;
+        }
+.circle li {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        margin-bottom: 15px;
+        text-indent: -9999px;
+        border: 1px solid #fff;
+        }
+.circle li.on {background-color: #fff;}
+
+.circle li:hover {opacity: 0.6;
+        cursor: pointer;}
+
+/* 전체타이틀설정 */
+.title  {
+        font-weight: bold;
+        font-size: 32px;
+        margin-bottom: 28px;
+        color: #1a1a1a;
+        }
+
+/* info설정 */
+.info {margin-bottom: 200px;}
+.info .title    {
+                font-size: 100px;
+                margin-bottom: 45px;
+                color: #406B21;
+                letter-spacing: 10px;
+                z-index: 1;
+                }
+.info .top_title {
+                position: relative;
+                font-size: 150px;
+                color: #D9D9D9;
+                opacity: 0.3;
+                margin-top: 140px;
+                top: 60px;
+                left: 290px;
+                }
+.info .top_txt {
+                font-size: 20px;
+                margin-bottom: 29px;
+                color: #1a1a1a;
+                line-height: 35px;
+                }
+.info em {
+        font-weight: bold;
+        font-style: normal;
+        font-size: 21px;
+        line-height: 45px;
+
+        }
+.info .bottom_txt {
+                display: flex;
+                font-size: 20px;
+                margin-top: 5px;
+                margin-bottom: 20px;
+                }
+.info button {
+                padding: 10px 30px;
+                background-color: #775439;
+                color: #fff;
+                cursor: pointer; 
+                margin-top: 20px;
+                border: none;
+                width: 220px;
+                height: 55px;
+                font-size: 20px;
+                }
+.info button:hover {opacity: 0.6;}
+.info_img   {
+                margin-top: 280px;
+                width: 100%;
+                text-align: center;
+                margin-left: 120px;
+                }
+.info_img img {max-width: 100%;}
+
+.info span {display: flex;}
+.info span p {margin-left: 25px;}
+.info .bottom_txt {margin-top: 11px;}
+
+
+
+
+/* 서울숲 명소 */
+.box3-1 span {
+        position: relative;
+        font-size: 150px;
+        color: #D9D9D9;
+        opacity: 0.3;
+        margin-top: 140px;
+        top: 130px;
+        left: 20px;
+        font-weight: bold;
+        }
+
+
+.box3-1 .title_1 {text-align: center;}
+.title_1 {margin-bottom: 100px;}
+.tour {position: relative;}
+.tour .imgBox1  {
+                background: rgba(82, 120, 55, 0.4);
+                margin-top: 20px;
+                position: relative;
+                height: 700px;
+                width: 890px;
+                margin-bottom: 180px;
+                }
+
+.tour .imgBox1>div      {
+                        display: flex;
+                        align-items: center;
+                        position: absolute;
+                        height: 200px;
+                        width: 100%;
+                        left: 0;
+                        top: 0;
+                        display: none;
+                        }
+.tour .imgBox1>div.on {
+                        display: flex;
+                        }
+.tour .imgBox1 img   {
+                        position: absolute;
+                        right: -200px;
+                        top: -40%;
+                        width: 980px;
+                        height: 680px;
+                        }
+.box4-2 {
+        position: absolute;
+        right: 0;
+        bottom: 500px;
+        letter-spacing: 40px;
+        font-size: 65px;
+        font-weight: bold;
+        }
+.box4-2 li {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: none;
+        }
+.box4-2 li.on{display: block;}
+
+.box4-3 {
+        position: absolute;
+        font-weight: bold;
+        right: 23%;
+        letter-spacing: 5px;
+        font-size: 170px;
+        color: #406B21;
+        z-index: 1;
+        }
+.box4-3 li {
+        position: absolute;
+        display: none;
+        }
+.box4-3 li.on{display: block;}
+
+.box4-5 {
+        font-weight: bold;
+        position: absolute;
+        font-weight: bold;
+        right: 21.9%;
+        top: -20px;
+        letter-spacing: 5px;
+        font-size: 170px;
+        color: #d9d9d9;
+        opacity: 0.3;
+        }
+.box4-5 li {
+        position: absolute;
+        display: none;
+        }
+.box4-5 li.on{display: block;}
+
+/* 화살표설정 */
+.box4-4 {
+        position: absolute;
+        font-weight: bold;
+        right: 22%;
+        bottom: 32%;
+        }
+.arrow {position: relative;}
+.arrow span {
+                position: absolute;
+                font-weight: bold;
+                display: block;
+                font-size: 35px;
+                color: #C6BDBD;
+                cursor: pointer;
+                }
+.arrow .left {left: -250%;}
+.arrow .right {right: -250%;}           
+.arrow span:hover {color: #333;}
+
+/* 서울숲여행 */
+.box5-1 .title_9 {
+                text-align: center;
+                background-color: #af937f;
+                padding: 12px;
+                }
+
+.box6 span {position: absolute;
+right: 145px;
+z-index: 1;
+font-size: 150px;
+font-weight: bold;
+color: #d9d9d9;
+top: -65px;
+opacity: 0.3;}
+
+.box6 {
+        position: relative;
+        height: 850px;
+        padding-top: 80px;
+        background-color: #f7e4d6;
+        }
+.box6 .box6-1 {
+                position: absolute;
+                margin-left: 120px;
+                }
+.box6-1 .imgBox1     {
+                        display: flex;
+                        align-items: center;
+                        position: absolute;
+                        height: 150px;
+                        width: 100%;
+                        display: none;
+                        }
+.box6-1 .txt1   {
+                display: flex;
+                align-items: center;
+                position: absolute;
+                height: 150px;
+                width: 100%;
+                display: none;
+                }
+.box6 .box6-1>div.on    {
+                        display: flex;
+                        }
+
+.box6-1 p {
+        position: absolute;
+        left: 100px;
+        top: 262px;
+        font-size: 25px;
+        text-align: center;
+        color: #fff;
+        line-height: 48px;
+        letter-spacing: 2px;
+        }
+.box6-1 p em    {
+                font-size: 52px;
+                font-style: normal;
+                letter-spacing: none;
+                font-weight: bold;
+                letter-spacing: 1px;
+                }
+
+
+.box6-1 button {
+                position: absolute;
+                left: 115px;
+                top: 380px;
+                padding: 10px 30px;
+                background-color: rgba( 0, 0, 0, 0.5 );
+                border-style: solid 1px #fff;
+                color: #fff;
+                opacity: 0.8;
+                cursor: pointer; 
+                margin-top: 20px;
+                border: none;
+                width: 230px;
+                height: 60px;
+                font-size: 25px;
+                }
+
+
+.box6 .box6-2 {
+                position: absolute;
+                margin-left: 700px;
+                }
+.box6-2 .imgBox3 {
+                display: flex;
+                align-items: center;
+                position: absolute;
+                height: 150px;
+                width: 100%;
+                display: none;
+                }
+.box6-2 .txt3   {
+                display: flex;
+                align-items: center;
+                position: absolute;
+                height: 150px;
+                width: 100%;
+                display: none;
+                }
+.box6 .box6-2>div.on    {
+                        display: flex;
+                        }
+
+.box6-2 p {
+        position: absolute;
+        left: 120px;
+        top: 262px;
+        font-size: 25px;
+        text-align: center;
+        color: #fff;
+        line-height: 48px;
+        letter-spacing: 2px;
+        }
+.box6-2 p em    {
+                font-size: 52px;
+                font-style: normal;
+                letter-spacing: none;
+                font-weight: bold;
+                letter-spacing: 1px;
+                }
+
+
+.box6-2 button {
+                position: absolute;
+                left: 110px;
+                top: 380px;
+                padding: 10px 30px;
+                background-color: rgba( 0, 0, 0, 0.5 );
+                border-style: solid 1px #fff;
+                color: #fff;
+                opacity: 0.8;
+                cursor: pointer; 
+                margin-top: 20px;
+                border: none;
+                width: 230px;
+                height: 60px;
+                font-size: 25px;
+                }
+
+.box6 .box6-3   {
+                position: absolute;
+                margin-left: 1280px;
+                }
+.box6-3 .imgBox5 {
+                display: flex;
+                align-items: center;
+                position: absolute;
+                height: 150px;
+                width: 100%;
+                display: none;
+                }
+.box6-3 .txt5   {
+                display: flex;
+                align-items: center;
+                position: absolute;
+                height: 150px;
+                width: 100%;
+                display: none;
+                }
+.box6 .box6-3>div.on    {
+                        display: flex;
+                        }
+
+.box6-3 p {
+        position: absolute;
+        left: 100px;
+        top: 262px;
+        font-size: 25px;
+        text-align: center;
+        color: #fff;
+        line-height: 48px;
+        letter-spacing: 2px;
+        }
+.box6-3 p em    {
+                font-size: 52px;
+                font-style: normal;
+                letter-spacing: none;
+                font-weight: bold;
+                letter-spacing: 1px;
+                }
+
+.box6-3 button {
+                position: absolute;
+                left: 120px;
+                top: 380px;
+                padding: 10px 30px;
+                background-color: rgba( 0, 0, 0, 0.6 );
+                border-style: solid 1px #fff;
+                color: #fff;
+                opacity: 0.8;
+                cursor: pointer; 
+                margin-top: 20px;
+                border: none;
+                width: 230px;
+                height: 60px;
+                font-size: 25px;
+                }
+                .box6 button:hover {opacity: 0.6;}
+
+/* 서울숲지도 */
+
+
+
+.box7-1 .title_2 {text-align: center;}
+.title_2 {
+        margin-bottom: 5px;
+        margin-top: 130px;
+        }
+
+.map .imgBox2   {
+                margin-top: 20px;
+                position: relative;
+                height: 800px;
+                width: 1000px;
+                }
+.map .imgBox2>div       {
+                        display: flex;
+                        align-items: center;
+                        position: absolute;
+                        height: 200px;
+                        width: 100%;
+                        left: 0;
+                        top: 150px;
+                        display: none;
+                        }
+.map .imgBox2>div.on    {
+                        display: flex;
+                        }
+.map .imgBox2 img       {
+                        position: absolute;
+                        right: -210px;
+                        top: -65%;
+                        width: 1255px;
+                        height: 750px;
+                        }
+
+.map .click li {
+                padding:30px;
+                color: #1a1a1a;
+                background:rgba(91, 186, 79, 0.3);;
+                width: 240px;
+                text-align: center;
+                }
+
+.map li:hover   {
+                color: #2B5A0A;
+                font-weight: bold;
+                }
+.btn    {
+        display: flex;
+        position: absolute;
+        right: 7%;
+        bottom: 11%;
+        }
+.btn div {}
+.btn a  {
+        display: flex;
+        margin-left: 20px;
+        }
+.btn p {
+        font-size: 16px;
+        margin-left: 5px;
+        }
+.btn img {
+        width: 20px;
+        height: 20px;
+        }
+
+.btn p:hover {opacity: 0.6;}
+
+.map {position: relative;}
+.map button {
+                position: absolute;
+                right: 7%;
+                bottom: 1%;
+                padding: 10px 30px;
+                background-color: #775439;
+                color: #fff;
+                cursor: pointer; 
+                margin-top: 20px;
+                border: none;
+                width: 160px;
+                height: 70px;
+                font-size: 25px;
+                }
+.map button:hover {opacity: 0.6;}
+
+
+/* 공지사항 */
+
+.box9 span {
+        position: relative;
+        font-size: 150px;
+        color: #D9D9D9;
+        opacity: 0.3;
+        margin-top: 140px;
+        top: 232px;
+        left: 1220px;
+        font-weight: bold;
+        z-index: 1;
+        }
+
+
+.box9-1 .title_3 {
+                text-align: center;
+                margin-top: 70px;
+                }
+.notice {
+        display: flex;
+        margin-left: 160px;
+}
+
+.notice h3      {
+                color: #927661;
+                margin-top: 20px;
+                }
+.notice p       {
+                color: #888484;
+                font-size: 22px;
+                margin-top: 12px;
+                margin-bottom: 150px;
+                }
+.notice img {margin-top: 80px;}
+.notice {
+        border-bottom: solid 2px #1a1a1a;
+        width: 1580px;
+        }
+
+.notice .not1 {margin-right: 185px;}
+.notice .not2 {margin-right: 185px;}
+.notice img:hover {opacity: 0.6;}
+.notice h3:hover {opacity: 0.6;}
+
+.not1 {
+        border-bottom: 4px solid #000000;
+        width: 500px;
+        bottom: 0;
+        }
+
+/* 찾아오시는길 */
+.box11 span {
+        position: relative;
+        font-size: 150px;
+        color: #D9D9D9;
+        opacity: 0.3;
+        margin-top: 140px;
+        top: 382px;
+        left: 230px;
+        font-weight: bold;
+        z-index: 1;
+        }
+
+
+
+.box11-1 .title_4 {
+                text-align: center;
+                margin-top: 270px;
+                margin-bottom: 30px;}
+.google {padding-left: 60px;}
+.google b {font-size: 35px;}
+.google p {font-size: 35px;}
+.google img {padding-right: 25px;}
+.goo_map {margin-bottom: 30px;}
+
+.address p      {
+                padding-left: 68px;
+                margin-top: 12px;
+                }
+.bus {margin-top: 40px;}
+.bus li {line-height: 45px;}
+.bus li em      {
+                font-style: normal;
+                color: #FFB443;
+                padding-right: 20px;
+                }
+.bus li span    {
+                color: #5BBA4F;
+                padding-right: 50px;
+                }
+.bus ul {
+        padding-left: 65px;
+        margin-top: 12px;
+        }
+.bus ul li p {
+                padding-left: 117px;
+                margin-bottom: 5px;
+                }
+.bus li:nth-child(1) {margin-bottom: 5px;}
+.google .map {padding-left: 140px;}
+.box12-2 {margin-left: 155px;}
+
+/* 서울숲 영상 */
+
+.box13 .forest{
+        position: relative;
+        font-size: 130px;
+        color: #fff;
+        opacity: 0.6;
+        margin-top: 10px;
+        top: 365px;
+        right: 312px;
+        font-weight: bold;
+        text-align: right;
+        z-index: 1;
+        letter-spacing: 2px;
+        }
+.box13 .forest em {
+                font-style: normal;
+                color: #1a1a1a;
+                }
+
+                        
+.box13 .box13_txt {text-align: right;}
+
+.box13-1 .title_5 {
+                text-align: center;
+                margin-top: -80px;
+                margin-bottom: 55px;
+
+                }
+.vedio .veo_img {margin-left: 10%;}
+.box14-2 {position: relative;}
+.box14-2 .you_txt {
+                position: absolute;
+                bottom: 24%;
+                text-align: center;
+                right: 280px;
+                line-height: 45px;
+                }
+.box14-2 button {
+        position: absolute;
+        right: 39%;
+        bottom: 9%;
+        padding: 10px 30px;
+        background-color: #775439;
+        color: #fff;
+        cursor: pointer; 
+        margin-top: 20px;
+        border: none;
+        width: 250px;
+        height: 70px;
+        font-size: 25px;
+        }
+.box14-2 button:hover {opacity: 0.6;}
+
+/* 서울숲영상 play버튼 */
+.vedio {position: relative;}
+.vedio .playbtn {
+                position: absolute;
+                left: 36%;
+                top: 270px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100px;
+                height: 100px;
+                border-radius: 55px;
+                border: 2px solid #fff;
+                }
+.vedio .playbtn img     {
+                        width: 32px;
+                        height: 36px;
+                        margin-left: 8px;
+                        color: #fff;
+                        }
+.vedio .vedio_txt       {
+                        position: absolute;
+                        left: 37.5%;
+                        top: 382px;
+                        font-size: 14px;
+                        color: #fff;
+                        letter-spacing: 3px;
+                        }
+
+.playbtn a img:hover {opacity: 0.6;}
+
+/* SNS */
+.box15-1 .title_6 {
+                        text-align: center;
+                        margin-top: 250px;
+                        margin-bottom: 70px;
+                        }
+.snsSet ul {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        }
+.snsSet li a{
+                display: flex;
+                width: 250px;
+                height: 200px;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                }
+.snsSet li a span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 120px;
+                height: 120px;
+                border-radius: 60px;
+                border: 2px solid #775439;
+                }
+
+.snsSet li a img {
+                max-width:69px;
+                height:69px;
+                }
+.snsSet li a p {
+                font-size: 16px;
+                margin-top: 10px;
+                } 
+.snsSet li a:hover img {opacity: 0.6;}               
+
+
+/* 푸터설정 */
+.footer {
+        background-color: #625353;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 400;
+        padding-left: 95px;
+        margin-top: 300px;
+        }
+.footer_1 {
+        margin-bottom: 40px;
+        padding-top: 80px;
+        }
+.footer_2 {margin-bottom: 20px;}
+.footer_3 {margin-bottom: 20px;}
+.footer_5 {
+        margin-top: 40px;
+        padding-bottom: 80px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 미디어쿼리구간설정///////////////////////////////////// */
+
+/* 768이상구간 설정////////////////////////// */
+@media (min-width: 768px) {
+
+    /* 레이아웃 설정 */
+
+    /* 박스A와 B 가로정렬 */
+
+
+header:after {
+                content: "";
+                display: block;
+                clear: both;
+                }
+.boxA {
+        float: left;
+        width: 40%;
+        }
+.boxB {
+        float: left;
+        width: 60%;
+        }
+
+    /* 박스2-1과 2-2 가로정렬 */
+.box2 {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        margin: 0 auto;
+        }
+.box2-1 {width: 50%;}
+.box2-2 {width: 50%;}
+
+    /* 박스4-1과 4-2 가로정렬 */
+.box4 {
+        display: flex;
+        justify-content: space-between;
+        }
+.box4-1 {width: 68%;}
+.box4-2 {width: 30%;}
+
+    /* 박스 6-1, 6-2, 6-3 가로정렬 */
+/* .box6 {
+        display: flex;
+        justify-content: center;
+        } */
+
+
+    /* 박스 8-1과 8-2 가로정렬 */
+.box8 {
+        display: flex;
+        justify-content: space-between;
+        }
+.box8-1 {width: 26%;}
+.box8-2 {width: 72%;}
+
+/* 박스9 설정 */
+
+
+    /* 박스 10-1, 10-2, 10-3 가로정렬 */
+.box10 {
+        display: flex;
+        }
+
+
+    /* 박스14-1과 14-2 가로정렬 */
+.box14 {
+        display: flex;
+        justify-content: center;
+        }
+.box14-1 {width: 50%}
+.box14-2 {width: 50%;}
+}
