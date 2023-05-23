@@ -4,221 +4,501 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>장태산자연휴양림</title>
+    <title>서울숲</title>
     <!-- 그리드가이드연결 -->
     <!-- <link rel="stylesheet" href="css/grid-guide.css"> -->
     <!-- 외부스타일시트연결 -->
     <link rel="stylesheet" href="css/style.css">
 
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(document).ready(function(){
+                                    // listTitle의 li를 클릭했을 때, 각 순번에 맞는 listBox의 ul이 보여라
+                                    $('.map li').click(function(){
+                                                                        // 변수만들기(순번찾기)
+                                                                        let a =$(this).index()
+                                                                        console.log(a)
+                                                                        $('.imgBox>div').hide()
+                                                                        $('.imgBox>div').eq(a).show()
+                                                                        })
+                                    })
+    </script>
 </head>
+
+
+
+
 <body>
-    <header class="boxA">
-        <div class="box1">
-            <h1 class="logo">장태산자연휴양림</h1>
+    <header>
+        <div class="boxA">
+            <h1 class="logo">서울숲</h1>
         </div>
-        <div class="box2">
+
+        <div class="boxB">
             <nav class="gnb">
                 <ul>
-                    <li><a href="#">휴양림소개</a></li>
-                    <li><a href="#">시설및이용안내</a></li>
-                    <li><a href="#">숲체험</a></li>
-                    <li><a href="#">열린공간</a></li>
-                    <li><a href="#">참여마당</a></li>
+                    <li>
+                        <a href="#">이용안내</a>
+                    </li>
+
+                    <li>
+                        <a href="#">관람안내</a>
+                    </li>
+
+                    <li>
+                        <a href="#">서울숲 이야기</a>
+                    </li>
+
+                    <li>
+                        <a href="#">공지사항</a>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
-    <section class="boxB">
-        <article class="box3">
-            <div class="box3-1">
+
+
+    <section>
+        <article class="box1"> 
                 <div class="hero">
-                    <img src="img/header_bg.jpg" alt="">
-                </div>
-            </div>
-            <div class="box3-2">
-                <div class="hero_arrow">
+                    <img src="img/tulip_slogun.jpg" alt="">
                     <span class="left"><</span>
                     <span class="right">></span>
-                    <div class="hero_num">
-                        <em>01</em>/03
+                    <div class="hero_txt">
+                        행복이 시작되는 곳<br>
+                        바로 여기 서울숲입니다.
+                    </div>
+                    <div class="circle">
+                        <ul>
+                            <li class="on">1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                        </ul>
+                    </div>
+                </div>
+        </article>
+
+        
+        <article class="box2">
+            <div class="box2-1">
+                <div class="info">
+                    <h1 class="top_title">ABOUT</h1>
+                    <h2 class="title">SeoulForest</h2>
+                    <p class="top_txt">
+                        서울숲은 문화예술공원, 체험학습원, 생태숲, 습지생태원<br>
+                        네 가지의 특색 있는 공간들로 구성되어 있다.<br>
+                        한강과 맞닿아 있어 다양한 문화여가공간을 제공하며<br>
+                        조성부터 프로그램 운영까지 시민의 참여로 이루어진 최초의 공원이다.
+                    </p>
+                    <span>
+                        <em>운영시간</em>
+                        <p class="bottom_txt">24시간 운영(연중무휴)</p>
+                    </span>
+                    <button>자세히보기</button>
+                </div>
+            </div>
+            <div class="box2-2">
+                <div class="info_img">
+                    <img src="img/introduction_dear.jpg" alt="">
+                </div>
+            </div>
+        </article>
+
+
+        <article class="box3">
+
+            <div class="box3-1">
+                <span>PHOTO</span>
+                <h2 class="title_1">서울숲 명소</h2>
+            </div>
+        </article>
+
+        <article class="box4 tour">
+
+            <div class="box4-1">
+                <div class="imgBox1">
+                    <div class="on">
+                        <img src="img/warhorse.jpg" alt="">
+                    </div>
+
+                    <div>
+                        <img src="img/tree_change.png" alt="">
+                    </div>
+
+                    <div>
+                        <img src="img/wetland_change.png" alt="">
+                    </div>
+
+                    <div>
+                        <img src="img/childrengarden_change.png" alt="">
+                    </div>
+                    
+                    <div>
+                        <img src="img/hydrangea_change.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="box4-2">
+                <ul>
+                    <li class="on">군마상</li>
+                    <li>메타세콰이어길</li>
+                    <li>습지초화원</li>
+                    <li>어린이정원</li>
+                    <li>수국길</li>
+                </ul>
+            </div>
+
+            <div class="box4-3">
+                <ul>
+                    <li class="on">01</li>
+                    <li>02</li>
+                    <li>03</li>
+                    <li>04</li>
+                    <li>05</li>
+                </ul>
+            </div>
+
+            <div class="box4-4">
+                <div class="arrow">
+                    <span class="left"><</span>
+                    <span class="right">></span>
+                    <div class="num">
+                        <em>1</em>/5
+                    </div>
+                </div>
+            </div>
+
+            <div class="box4-5">
+                <ul>
+                    <li class="on">01</li>
+                    <li>02</li>
+                    <li>03</li>
+                    <li>04</li>
+                    <li>05</li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="box5">
+            <div class="box5-1">
+                <h2 class="title_9">서울숲 여행</h2>
+            </div>
+        </article>
+
+        <article class="box6">
+            <span>TRAVEL</span>
+            <div class="box6-1">
+                    <div class="on">
+                        <div class="imgBox1">
+                            <img src="img/festival_2.jpg" alt="">
+                        </div>
+                        <div class="txt1">
+                            <p>
+                                놓치기 아까운<br>
+                                <em>서울숲 축제</em>
+                            </p>
+                            <button>더보기</button>
+                        </div>
+                    </div>
+                    <div class="hover">
+                        <div class="imgBox2">
+                            <img src="img/festival_2.jpg" alt="">
+                        </div>
+                        <div class="txt2">
+                            <p>
+                                놓치기 아까운<br>
+                                <em>서울숲 축제</em>
+                            </p>
+                            <button>더보기</button>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="box6-2">
+                <div class="on">
+                    <div class="imgBox3">
+                        <img src="img/festival2.jpg" alt="">
+                    </div>
+                    <div class="txt3">
+                        <p>
+                            서울숲에서 즐기는<br>
+                            <em>체험 여행</em>
+                        </p>
+                        <button>더보기</button>
+                    </div>
+                </div>
+
+                <div class="hover">
+                    <div class="imgBox4">
+                        <img src="img/festival2.jpg" alt="">
+                    </div>
+                    <div class="txt4">
+                        <p>
+                            서울숲에서 즐기는<br>
+                            <em>체험 여행</em>
+                        </p>
+                        <button>더보기</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box6-3">
+                <div class="on">
+                    <div class="imgBox5">
+                        <img src="img/foodfestival.jpg" alt="">
+                    </div>
+                    <div class="txt5">
+                        <p>
+                            빼놓을 수 없는<br>
+                            <em>먹거리 여행</em>
+                        </p>
+                        <button>더보기</button>
+                    </div>
+                    <div class="hover">
+                        <img src="img/foodfestival.jpg" alt="">
+                    </div>
+                    <div class="txt6">
+                        <p>
+                            빼놓을 수 없는<br>
+                            <em>먹거리 여행</em>
+                        </p>
+                        <button>더보기</button>
                     </div>
                 </div>
             </div>
         </article>
-        <article class="box4">
-            <div class="box4-1">
-                <div class="info">
-                    <h1 class="title">Lorem ipsum dolor sit amet</h1>
-                    <p>Lorem ipsum dolor sit amet <em>consectetur adipisicing</em> elit.<br> Ratione perferendis quaerat voluptatum dolor, vero praesentium nisi deserunt corrupti, voluptates eveniet numquam</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, <br>architecto tempore error nulla nisi nobis rem perferendis est non eos provident voluptatem cupiditate at vitae fuga minus<br> minima <em>aspernatur voluptatum</em>.</p>
-                </div>
-            </div>
-        </article>
-        <article class="box5">
-            <div class="box5-1">
-                <img src="img/g001.jpg" alt="" class="gnaimg">
-            </div>
-            <div class="box5-2">
-                <h2>장태산자연휴양림</h2>
-                <div class="listBox">
-                    <ul>
-                        <li>list1</li>
-                        <li>list2</li>
-                        <li>list3</li>
-                    </ul>
-                    <button>문의하기</button>
-                </div>
-                <p>대전장태산휴양림 주소</p>
-            </div>
-        </article>
-        <article class="box6">
-            <div class="box6-1">
-                <h1 class="title">
-                    주변관광안내
-                </h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quasi eius inventore praesentium laborum. Sapiente, officia enim. Dolorem, qu</p>
-            </div>
-            <div class="box6-2">
-                <ul>
-                    <li>Tab1</li>
-                    <li>Tab2</li>
-                    <li>Tab3</li>
-                    <li>Tab4</li>
-                    <li>Tab5</li>
-                    <li>Tab6</li>
-                    <li>Tab7</li>
-                    <li>Tab8</li>
-                    <li>Tab9</li>
-                </ul>
-            </div>
-            <div class="box6-3">
-                <div class="imgBox">
-                    <div><a href="#">바로가기</a>
-                        <img src="" alt=""></div>
-                    <div><a href="#">바로가기</a>
-                        <img src="" alt=""></div>
-                    <div><a href="#">바로가기</a>
-                        <img src="" alt=""></div>
-                    <div><a href="#">바로가기</a>
-                        <img src="" alt=""></div>
-                    <div><a href="#">바로가기</a>
-                        <img src="" alt=""></div>
-                    <div><a href="#">바로가기</a>
-                        <img src="" alt=""></div>
-                    <div><a href="#">바로가기</a>
-                        <img src="" alt=""></div>
-                    <div><a href="#">바로가기</a>
-                        <img src="" alt=""></div>
-                    <div><a href="#">바로가기</a>
-                        <img src="" alt=""></div>
-                </div>
-            </div>
-        </article>
+
         <article class="box7">
             <div class="box7-1">
-                <h1 class="title">Notice</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero earum error non consectetur praesentium, sint dolore aperiam dolorem laborum fugit </p>
+                <h2 class="title_2">서울숲 지도</h2>
             </div>
-            <div class="box7-2">
+        </article>
+
+        <article class="box8 map">
+            
+            <div class="box8-1 click">
                 <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
+                    <li>건물 및 시설물</li>
+                    <li>공연장</li>
+                    <li>관람시설</li>
+                    <li>녹지시설</li>
+                    <li>놀이시설</li>
+                    <li>동물사육사</li>
+                    <li>안내시설</li>
+                    <li>편의시설</li>
+                    <li>화장실</li>
                 </ul>
             </div>
-            <div class="box7-3">
+
+            <div class="box8-2">
+                <div class="imgBox2">
+                    <div class="on">
+                        <img src="img/map_001.jpg" alt="">
+                    </div>
+    
+                    <div>
+                        <img src="img/map_002.jpg" alt="">
+                    </div>
+    
+                    <div>
+                        <img src="img/map_003.jpg" alt="">
+                    </div>
+    
+                    <div>
+                        <img src="img/map_004.jpg" alt="">
+                    </div>
+    
+                    <div>
+                        <img src="img/map_005.jpg" alt="">
+                    </div>
+    
+                    <div>
+                        <img src="img/map_006.jpg" alt="">
+                    </div>
+    
+                    <div>
+                        <img src="img/map_007.jpg" alt="">
+                    </div>
+    
+                    <div>
+                        <img src="img/map_008.jpg" alt="">
+                    </div>
+    
+                    <div>
+                        <img src="img/map_009.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="btn">
+                                <div>
+                                    <a href="#">
+                                        <img src="img/location-marker.jpg" alt="">
+                                        <p>AR 길찾기</p>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="img/camera.jpg" alt="">
+                                        <p>포토존</p>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="img/flag.jpg" alt="">
+                                        <p>추천관람코스</p>
+                                    </a>
+                                </div>
+                </div>
+
+                <button>전체보기</button>
+            </div>
+        </article>
+
+        <article class="box9">
+            <span>NOTICE</span>
+            <div class="box9-1">
+                <h2 class="title_3">공지사항</h2>
+            </div>
+        </article>
+
+        <article class="box10 notice">
+            <div class="box10-1 not1">
+                <img src="img/notice_001.jpg" alt="">
+                <h3>서울숲 5월 이용안내</h3>
+                <p>2023.05.01.</p>
+            </div>
+
+            <div class="box10-2 not2">
+                <img src="img/notice_002.jpg" alt="">
+                <h3>서울숲 3~4월 이용안내</h3>
+                <p>2023.03.05.</p>
+            </div>
+
+            <div class="box10-3 not3">
+                <img src="img/notice_003.jpg" alt="">
+                <h3>방문 전 꼭 읽어주세요!</h3>
+                <p>2021.08.20.</p>
+            </div>
+        </article>
+
+        <article class="box11">
+            <span>NAVI</span>
+            <div class="box11-1">
+                <h2 class="title_4">찾아오시는길</h2>
+            </div>
+        </article>
+
+        <article class="box12 google">
+            <div class="box12-1 goo_map">
+                <a href="#">
+                    <div class="map" id="inf">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.4529022389065!2d127.03486747575889!3d37.54439202539784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca37d51f4f62b%3A0xdd9b9865be0f469a!2z7ISc7Jq47Iiy6rO17JuQ!5e0!3m2!1sko!2skr!4v1684392387055!5m2!1sko!2skr" width="1500" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </a>
+            </div>
+
+            <div class="box12-2">
+                <div class="address">
+                    <img src="img/way.jpg" alt="">
+                    <b>주소</b>
+                    <p>서울특별시 성동구 뚝섬로 273</p>
+                </div>
+
+                <div class="bus">
+                    <img src="img/car.png" alt="">
+                    <b>찾아오시는길</b>
+                    <ul>
+                        <li><em>지하철</em> 분당선 서울숲 3번 출구 2호선 뚝섬 8번 출구</li>
+                        <li><span>버스</span> 2014번 2412번 2224번 2413번 (초록버스)<br>
+                                <p>121번 141번 145번 148번 463번 (파랑버스)</p></li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="box13">
+            <p class="forest">SEOULFO<em>REST</em><br>
+            V<em>EDIO</em></p>
+            <div class="box13-1">
+                <h2 class="title_5">서울숲 영상</h2>
+            </div>
+        </article>
+
+        <article class="box14 vedio">
+            <div class="box14-1 veo_img">
+                <img src="img/youtubepicture.jpg" alt="">
+                <span class="playbtn">
+                    <a href="#">
+                        <img src="img/play.png" alt="">
+                    </a>
+                </span>
+                <p class="vedio_txt">PLAY</p>
+            </div>
+
+            <div class="box14-2">
+                <p class="you_txt">서울숲에 대한 영상을<br>
+                    더 보고 싶다면</p>
+                <button>자세히보기</button>
+            </div>
+        </article>
+
+        <article class="box15">
+            <div class="box15-1">
+                <h2 class="title_6">SNS</h2>
+            </div>
+        </article>
+
+        <article class="box16 sns">
+            <div class="snsSet">
                 <ul>
                     <li>
                         <a href="#">
-                            <div class="txt">
-                                <h3>타이틀내용</h3>
-                                <em>작성자</em>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda tempora repellendus natus magni aliquid aut tenetur eligendi cupiditate beatae voluptate! Reprehenderit saepe officia, velit quis quas quidem quisquam dignissimos fugiat.
-                            </div>
-                            <span>2022.10.10</span>
+                            <span><img src="img/instagram 1.jpg" alt="" class="insta"></span>
+                            <p>Instagram</p>
                         </a>
-                     </li>
+                    </li>
+
                     <li>
                         <a href="#">
-                            <div class="txt">
-                                <h3>타이틀내용</h3>
-                                <em>작성자</em>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda tempora repellendus natus magni aliquid aut tenetur eligendi cupiditate beatae voluptate! Reprehenderit saepe officia, velit quis quas quidem quisquam dignissimos fugiat.
-                            </div>
-                            <span>2022.10.10</span>
+                            <span><img src="img/facebook_001.jpg" alt="" class="face"></span>
+                            <p>Facebook</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span><img src="img/blog_001.jpg" alt="" class="blo"></span>
+                            <p>Blog</p>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#">
+                            <span><img src="img/youtube 1.jpg" alt="" class="youtu"></span>
+                            <p>Youtube</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span><img src="img/twitter 1.jpg" alt="" class="twit"></span>
+                            <p>Twitter</p>
                         </a>
                     </li>
                 </ul>
             </div>
         </article>
-        <article class="box8">
-            <div class="box8-1">
-                <h1 class="title">포토갤러리</h1>
-            </div>
-            <div class="box8-2">
-                <div class="trailer">
-                    <ul>
-                        <li><img src="" alt=""></li>
-                        <li><img src="" alt=""></li>
-                        <li><img src="" alt=""></li>
-                        <li><img src="" alt=""></li>
-                        <li><img src="" alt=""></li>
-                    </ul>
-                    <ul>
-                        <li><img src="" alt=""></li>
-                        <li><img src="" alt=""></li>
-                        <li><img src="" alt=""></li>
-                        <li><img src="" alt=""></li>
-                        <li><img src="" alt=""></li>
-                    </ul>
-                </div>
-            </div>
-        </article>
-        <article class="box9">
-            <div class="box9-1">
-                <div class="gna">
-                    <h2>자주하는질문</h2>
-                    <ul>
-                        <li>
-                            <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quasi praesentium neque labore aliquid! Obcaecati illum ducimus, accusamus magnam quaerat i</strong>
-                            <em>Lorem ipsum dolor sit amet consectetur adipisicing elit.</em>
-                        </li>
-                        <li>
-                            <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quasi praesentium neque labore aliquid! Obcaecati illum ducimus, accusamus magnam quaerat i</strong>
-                            <em>Lorem ipsum dolor sit amet consectetur adipisicing elit.</em>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="box9-2">
-                <div class="reser">
-                    <h2>예약시주의사항</h2>
-                    <ul>
-                        <li>주의사항안내문1</li>
-                        <li>주의사항안내문2</li>
-                        <li>주의사항안내문3</li>
-                        <li>주의사항안내문4</li>
-                        <li>주의사항안내문5</li>
-                        <li>주의사항안내문6</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="box9-3">
-                <div class="program">
-                    <h2>프로그램예약안내</h2>
-                    <div class="listBox">
-                        <div>가족숲체험<span>예약하기</span></div>
-                        <div>단체숲체험<span>예약하기</span></div>
-                    </div>
-                </div>
-            </div>
-        </article>
     </section>
-    <footer class="boxC">footer</footer>
-   
 
-    
+    <footer class="footer">
+        <p class="footer_1">사이트맵 이용약관 날씨정보제공자 개인정보처리방침 영상정보처리기기 운영관리방침</p>
+        <p class="footer_2">서울특별시 성동구 뚝섬로 273</p>
+        <p class="footer_3">서울숲공원 운영 관련 문의 - 서울숲공원지원과</p>
+        <p class="footer_4"><img src="img/phone.png" alt=""> 02-460-2981</p>
+        <p class="footer_5">COPYRIGHT &copy; YERIMMY. 2023 ALL RIGHTS RESERVED.</p>
+    </footer>
+
 </body>
 </html>
