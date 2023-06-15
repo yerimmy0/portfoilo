@@ -1,5 +1,9 @@
 @charset 'utf-8';
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Niramit&display=swap');
 
 /* 전체설정 */
 *   {
@@ -16,28 +20,14 @@ img {
     vertical-align: bottom;
     }
 body {
-    font-family: 'Nanum Gothic', sans-serif;
+        font-family: 'Inter', sans-serif;
     color: #1a1a1a;
     width: 100%;
     }
 
 /* header설정 */
-
-/* header{
-        position: absolute;
-        width: 93.6%;
-        height: 170px;
-        left: 1px;
-        top: 0px;
-        padding-left: 120px;
-        background-color: #1a1a1a;
-        opacity: 0.3;
-        z-index:7;
-        } */
-
 .boxB   {
         position: absolute;
-        width: 18%;
         right: 0;
         top: 15px;
         color: #FFFFFF;
@@ -52,17 +42,24 @@ body {
                 }
 .boxC   {
         position: absolute;
-        width: 60%;
+        width: 100%;
         height: 22px;
-        left: 545px;
+        left: 0px;
         top: 135px;
         color: #FFFFFF;
         z-index: 10;
         font-size: 18px;
         }
-.eup {display: flex;}
+.eup    {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        }
 .submenu ul li{margin-right: 25px;}
-.eup li{margin-right: 180px;}
+.eup li {
+        width: 25%;
+        text-align: center;
+        }
 .eup li:hover {
                 color: #1a1a1a;
                 font-weight: bold;
@@ -77,14 +74,18 @@ header {
         z-index: 999;
         background-color: rgba(0, 0, 0, 0.2);
         }
-/* 로고설정 */
 
+/* 로고설정 */
 .logo   {
         width: 212px;
         height: 92px;
         background-image: url(../img/logo.png);
-        margin-left: 45%;
         margin-top: 12px;
+        }
+.boxA   {
+        display: flex;
+        justify-content: center;
+        text-align: center;
         }
 
 /* hero설정 */
@@ -94,8 +95,42 @@ header {
         width: 100%;
         box-sizing: border-box;
         height: 100vh;
-}
-.box1-1 {
+        }
+.dr {
+        position: absolute;
+        top: 35%;
+        display: flex;
+        }
+.dr p {
+        text-align: center;
+        color: #DC913A;
+        font-weight: bold;
+        font-size: 20px;}
+/* .box1-1{
+        position: absolute;
+        left: 10%;
+        } */
+.box1-1 img     {
+                width: 350px;
+                height: 350px;
+                box-sizing: border-box;
+                }
+/* .box1-2{
+        position: absolute;
+        left: 50%;
+        } */
+.box1-2 img     {
+                width: 600px;
+                height: 600px;
+                box-sizing: border-box;
+                }
+
+                .box1-3 img     {
+                        width: 400px;
+                        height: 400px;
+                        
+                        }
+/* .box1-1 {
         position: absolute;
         top: 560px;
         margin-left: 220px;
@@ -176,22 +211,30 @@ header {
         color: #DC913A;
         font-weight: bold;
         font-size: 20px;
-        }
+        } */
 
 /* hero글자 가운데 배치 */
+.hero_txt{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
 .up {
         position: absolute;
-        top: 260px;
-        left: 880px;
+        top: 270px;
+        /* left: 50%; */
         font-size: 38px;
         color: #1E7408;
+        font-family: 'Pattaya', sans-serif;
+
         }
 .down {
         position: absolute;
-        top: 310px;
-        left: 770px;
+        top: 330px;
+        /* left: 50%; */
         font-size: 60px;
         color: #DC913A;
+        font-family: 'Orelega One', cursive;
         }
 
 /* 읍천리메뉴 설정 */
@@ -214,7 +257,7 @@ header {
         color: #6A6A6A;
         margin-bottom: 100px;
         }
-.info span {
+.info .click {
         color: #000;
         font-weight: bold;
         font-size: 15px;
@@ -223,7 +266,7 @@ header {
         }
 .info span:hover {
                 cursor: pointer;
-                opacity: 0.5;
+                opacity: 0.3;
                 }
 
 /* 네모박스 */
@@ -250,7 +293,40 @@ header {
         }
 
 /* 메뉴 음료 이동 */
-.box2-2 {
+.box2 ul {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 130px;
+}
+.box2-2 {margin-left: 500px;}
+.drink p {text-align: center;}
+.txt2-1 {
+        font-weight: bold;
+        font-size: 26px;
+        }
+.txt2-2 {
+        font-size: 14px;
+        margin-top: 8px;
+        margin-bottom: 15px;
+        }
+.txt2-3 {
+        font-size: 15px;
+        line-height: 22px;
+        }
+.txt2-4 {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        }
+.txt2-5 {font-size: 11px;}
+.txt2-6 {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        }
+.txt2-7 {font-size: 11px;}
+
+/* .box2-2 {
         position: absolute;
         left: 600px;
         top: 120px;
@@ -304,64 +380,73 @@ header {
         font-weight: bold;
         margin-bottom: 5px;
         }
-.txt2-7 {font-size: 11px;}
+.txt2-7 {font-size: 11px;} */
 
 /* 메뉴 화살표 */
-.box2-2 span {
-                position: absolute;
-                color: #FFBD00;
-                font-weight: bold;
-                top: 42%;
-                display: block;
-                font-size: 45px;
-                cursor: pointer;
-                opacity: 30%;
-                }
-.box2-2 .left {left: 15%;}
-.box2-2 .right {right: 17%;}
-.box2-2 span:hover {opacity: 0.9;}
+/* .left {
+        position: absolute;
+        color: #FFBD00;
+        font-weight: bold;
+        top: 42%;
+        display: block;
+        font-size: 45px;
+        cursor: pointer;
+        opacity: 30%;
+        font-family: 'Nanum Gothic', sans-serif;
+        display: flex;
+        justify-content: left;
+        align-items: flex-start;
+        margin-left: 35%;
+        }
+.right {
+        position: absolute;
+        color: #FFBD00;
+        font-weight: bold;
+        top: 42%;
+        display: block;
+        font-size: 45px;
+        cursor: pointer;
+        opacity: 30%;
+        left: 55%;
+        font-family: 'Nanum Gothic', sans-serif;
+        }
+.left:hover {opacity: 0.9;}
+.right:hover {opacity: 0.9;} */
 
 /* 읍천리 history */
-.box3 {position: relative;
-height: 900px;}
-
-.box3-1 {
-        position: absolute;
-        left: 200px;
-        bottom: 115px;
-        }
-.box3-1 h3      {
-                color: #F33C01;
-                font-weight: bold;
-                font-size: 55px;
-                margin-bottom: 60px;
-                }
-.box3-2 {
-        position: absolute;
-        top: 120px;
-        right: 0;
-        box-sizing: border-box;
+.box3 {
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        margin: 200px auto;
+        z-index: 1;
+        margin-bottom: 350px;
+}
+.box3-1 {width: 50%;
+margin-left: 8.5%;
+margin-top: 140px;}
+.box3-2 {box-sizing: border-box;}
+.pro2  {
+        font-size: 60px;
+        color: #F33C01;
+        font-weight: bold;
+        margin-bottom: 60px;
+        font-family: 'Niramit', sans-serif;
         }
 .txt3-1 {
-        color: #6A6A6A;
-        font-size: 25px;
-        line-height: 36px;
-}
-.txt3-1 b {
-        color: #1a1a1a;
-        font-size: 30px;
+        font-size: 22px;
+        margin-bottom: 35px;
         }
-.txt3-2 {
-        margin-top: 25px;
-        margin-bottom: 25px;
-        color: #6A6A6A;
-        font-size: 25px;
-        line-height: 36px;
+        .txt3-1 b {font-size: 30px;}
+.txt3-2{
+        font-size: 22px;
+        margin-bottom: 35px;
         }
-.txt3-3 {
-        color: #6A6A6A;
-        font-size: 25px;
+.txt3-3{
+        font-size: 22px;
         margin-bottom: 80px;
+        line-height: 27px;
         }
 .box3-1 button {
                 background-color: #fff;
@@ -381,7 +466,78 @@ height: 900px;}
         color: #C6B085;
         font-weight: bold;
         font-size: 50px;
-        right: 35px;
+        right: 15px;
+        }
+.txt3-5 {
+        position: absolute;
+        transform: rotate(-90deg);
+        color: #fff;
+        font-weight: bold;
+        bottom: 180px;
+        letter-spacing: 3px;
+        font-size: 50px;
+        right: 800px;
+        z-index: 5;
+        }
+/* .box3 {
+        display: flex;
+        justify-content: space-between;
+}
+.box3-1 {
+        position: absolute;
+        left: 15%;
+        }
+.box3-2 {box-sizing: border-box;}
+.imgBox2 {right: -50px;}
+.box3-1 h3      {
+                color: #F33C01;
+                font-weight: bold;
+                font-size: 55px;
+                margin-bottom: 60px;
+                font-family: 'Niramit', sans-serif;
+                }
+
+.txt3-1 {
+        color: #6A6A6A;
+        font-size: 25px;
+        line-height: 36px;
+        font-family: 'Nanum Gothic', sans-serif;
+}
+.txt3-1 b {
+        color: #1a1a1a;
+        font-size: 30px;
+        }
+.txt3-2 {
+        margin-top: 35px;
+        margin-bottom: 35px;
+        color: #6A6A6A;
+        font-size: 25px;
+        line-height: 36px;
+        }
+.txt3-3 {
+        color: #6A6A6A;
+        font-size: 25px;
+        margin-bottom: 85px;
+        }
+.box3-1 button {
+                background-color: #fff;
+                border: 1px solid #4E4E4E;
+                width: 150px;
+                height: 50px;
+                font-size: 18px;
+                }
+.box3-1 button:hover {
+                        cursor: pointer;
+                        background-color: rgba(0, 0, 0, 0.1);
+                        opacity: 0.3;
+                        }
+.txt3-4 {
+        position: absolute;
+        top: 55px;
+        color: #C6B085;
+        font-weight: bold;
+        font-size: 50px;
+        right: 15px;
         }
 .txt3-5 {
         position: absolute;
@@ -392,24 +548,15 @@ height: 900px;}
         letter-spacing: 3px;
         font-size: 50px;
         left: -90px;
-        }
+        } */
 
 /* product menu설정 */
 .box4 {
-        position: relative;
-        height: 800px;
-        margin-top: 100px;
-        }
-.box4-1{
-        position: absolute;
-        top: 120px;
-        left: 200px;
-        }
-.box4-2 {
-        position: absolute;
-        top: 90px;
-        right: 180px;
-        }
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        margin: 200px auto;}
+.box4-2 {box-sizing: border-box;}
 .pro    {
         font-size: 60px;
         color: #99896A;
@@ -442,16 +589,17 @@ height: 900px;}
         }
 .md     {
         bottom: 0;
-        margin-left: 12%;
+        display: flex;
+        justify-content: center;
+        text-align: left;
         }
 .box6 fieldset {
                 width: 1200px;
-                height: 120px;
+                height: 150px;
                 }
 .box6 fieldset span{
                         margin-right: 50px;
                         margin-left: 13px;
-                        margin-top: 50px;
                         }
 .box6 fieldset input{margin-left: 25px;}
 .box6-1{
@@ -460,109 +608,142 @@ height: 900px;}
         box-sizing: border-box;
         }
 .md div {
-        margin-top: 20px;
+        margin-top: 23px;
         margin-left: 22px;
-        font-size: 18px;
+        font-size: 20px;
         font-weight: bold;
         }
-.ch     {
-        border-bottom: 1px solid #000;
-        width: 1375px;
-        height: 37px;
-        left: 143px;
-        top: 2963px;
-        margin-bottom: 20px;
-        margin-right: 20px;
+        .ch {
+                border-bottom: 1px solid #000;
+                margin-bottom: 25px;
+                height: 50px;
+                width: 1550px;
+                margin-right: 20px;
+                box-sizing: border-box;
+
         }
+/* .ch     {
+        border-bottom: 1px solid #000;
+        width: 2000px;
+        height: 37px;
+        margin-bottom: 20px;
+        /* margin-right: -500px; */
+        /* } */
 .md input:hover{cursor: pointer;}
 /* 상품 가로정렬하기 */
 .produ {
         display: flex;
         justify-content: center;
-        margin-bottom: 130px;
+        align-items: center;
         margin-top: 80px;
+        margin-bottom: 180px;
         }
-.box6-2 {margin-right: 180px;}
-.box6-3 {margin-right: 180px;}
-.box6-4 {margin-right: 180px;}
+.box6-2 {margin-right: 90px;}
+.box6-3 {margin-right: 90px;}
+.box6-4 {margin-right: 90px;}
 .produ p {text-align: center;}
 .main{
         font-size: 20px;
         font-weight: bold;
-        margin-top: 12px;
-        margin-bottom: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
         }
 .eng {
         font-size: 15px;
-        margin-bottom: 30px;
-        width: 219px;
+        margin-bottom: 35px;
+        width: 330px;
         height: 0px;
         left: 140px;
         top: 3426px;
         border-top: 1px solid #000000;
         }
-.sub {line-height: 22px;}
+.sub {line-height: 25px;}
 .produ img:hover {
                 cursor: pointer;
                 opacity: 0.7;
                 }
-
+.produ img {background-size: cover;}
 /* notice 설정 */
 .box5 {
         display: flex;
         border-top: #1a1a1a solid 1px;
         padding: 15px;
+        font-family: 'Nanum Gothic', sans-serif;
+        }
+.line1 {
+        border: 1px solid #1a1a1a;
+        opacity: 0.8;
+        transform: rotate(90deg);
+        height: 0;
+        width: 30px;
+        margin-top: 20px;
+        }
+.line2 {
+        border: 1px solid #1a1a1a;
+        opacity: 0.8;
+        transform: rotate(90deg);
+        height: 0;
+        width: 30px;
+        margin-top: 20px;
         }
 .box5-1 {display: flex;}
 .box5-1 img{
         margin-left: 40px;
         margin-right: 30px;
+        margin-top: 4px;
         }
+
 .txt5-1{
-        margin-top: 5px;
-        margin-right: 80px;
-        font-size: 18px;
+        margin-top: 10px;
+        margin-right: 30px;
+        font-size: 17px;
         }
 .txt5-2 {
-        margin-top: 6px;
+        margin-top: 10px;
         font-size: 16px;
+        margin-left: 15px;
         }
 .txt5-2:hover {
                 cursor: pointer;
                 opacity: 0.6;
                 }
 .txt5-3 {
-        margin-top: 5px;
-        margin-left: 500px;
+        margin-top: 10px;
+        margin-left: 450px;
         }
 .txt5-3:hover {cursor: pointer;}
 .hm     {
-        width: 60px;
+        width: 74px;
+        height: 0;
         border: 1px solid #1a1a1a;
         opacity: 0.6;
         transform: rotate(90deg);
-        margin: 15px 170px;
+        margin: 21px 170px;
         margin-left: 0px;
         }
 .box5-2 {display: flex;}
-.box5-2 img{margin-left: -170px;}
+.box5-2 img     {
+                margin-left: -170px;
+                margin-top: 5px;
+                }
 .txt5-4 {
-        margin-top: 5px;
-        margin-right: 80px;
+        margin-top: 10px;
+        margin-right: 30px;
         margin-left: -110px;
-        font-size: 18px;}
+        font-size: 17px;
+        }
 .txt5-5 {
-        margin-top: 6px;
+        margin-top: 10px;
         font-size: 16px;
-        margin-left: -10px;
+        margin-left: 15px;
         }
 .txt5-5:hover {
                 cursor: pointer;
                 opacity: 0.6;
                 }
 .txt5-6{
-        margin-top: 5px;
-        margin-left: 500px;
+        margin-top: 10px;
+        margin-left: 530px;
         }
 .txt5-6:hover {cursor: pointer;}
 
@@ -575,13 +756,17 @@ footer{
         font-size: 18px;
         }
 .footer1 {margin-right: 200px;}
-.footer1 img{margin-bottom: 50px;}
-.footer1 p{margin-bottom: 30px;}
+.footer1 img{margin-bottom: 40px;}
+
 .txt6-1 {
         font-weight: bold;
         word-spacing: 15px;
         letter-spacing: 2px;
         }
+.txt6-1{margin-bottom: 38px;}
+.txt6-2 {margin-bottom: 15px;}
+.txt6-3 {margin-bottom: 15px;}
+.txt6-4 {margin-bottom: 15px;}
 .txt6-2 span {
         margin-right: 20px;
         letter-spacing: 0.5px;
@@ -609,7 +794,10 @@ footer{
         margin-bottom: 25px;
         letter-spacing: 2px;
         }
-
+.txt6-9 {
+        margin-bottom: -5px;
+        margin-top: -5px;
+        }
 
 /* footer SNS 설정 */
 .footer3{
@@ -652,3 +840,279 @@ footer{
                 height: 45px;
                 }
 .footer3 li a:hover img {opacity: 0.6;}   
+
+
+
+/* 서브페이지 만들기 */
+section{overflow: hidden;}
+.box7 {position: relative;
+height: 1300px;}
+.box7 img {
+        margin-top: 300px;
+        margin-left: 160px;
+        }
+.box7-1 {
+        position: absolute;
+        margin-top: -690px;
+        right: 350px;
+}
+.swp2 {
+        font-size: 50px;
+        font-weight: bold;
+        margin-bottom: 18px;
+}
+.swp3 {
+        font-size: 23px;
+        margin-bottom: 25px;
+}
+.line3 {
+        width: 615px;
+        height: 0px;
+        left: 736px;
+        top: 354px;
+        border: 1px solid #000000;
+        margin-bottom: 40px;
+}
+.txt7-1 {display: flex;}
+.txt7-2 {display: flex;}
+.txt7-3 {display: flex;}
+.txt7-4 {display: flex;}
+.word {
+        margin-right: 430px;
+        margin-bottom: 40px;
+        font-size: 22px;
+}
+.price {
+        margin-left: 10px;
+        font-size: 24px;
+        font-weight: bold;
+}
+.open {
+        margin-left: 8px;
+        font-size: 21px;
+}
+.point {font-size: 20px;}
+.txt7-4 button {
+                width: 115px;
+                height: 40px;
+                margin-left: 26px;
+                }
+.txt7-4 button div {
+                word-spacing: 20px;
+                font-size: 15px;
+                }
+
+
+/* 같이 먹기 좋은 음료 설정 */
+.box8{height: 850px;}
+.title2 {
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        margin-left: 160px;
+        }
+.line4 {
+        border: 1px solid #000000;
+        margin-left: 130px;
+        margin-right: 130px;
+        margin-bottom: 70px;
+        }
+.box8 ul {
+        display: flex;
+        justify-content: space-around;
+        margin-right: 130px;
+        margin-left: 130px;
+        }
+.dri    {
+        margin-top: 12px;
+        margin-bottom: 10px;
+        font-size: 21px;
+        font-weight: bold;
+        }
+.pri {font-size: 20px;
+margin-right: 230px;
+font-size: 18px;}
+.bot {display: flex;}
+
+/* 회원혜택안내설정*/
+.box9 {height: 510px;}
+.box9 ul {
+        display: flex;
+        justify-content: space-around;
+        margin-right: 100px;
+        margin-left: 100px;
+        text-align: center;
+        }
+
+.title3 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 20px;
+}
+.title4 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 20px;
+}
+.title5 {
+        font-size: 24px;
+        font-weight: bold;
+
+}
+.botti{margin-top: 20px;
+font-size: 18px;
+line-height: 27px;}
+/* .box9 ul li div {
+        width: 240px;
+        height: 0px;
+
+        right: 0;
+        border: 1px solid #B5B5B5;
+transform: rotate(90deg);
+box-sizing: border-box;
+} */
+
+/* 광고박스 설정 */
+.box10 {position: relative;
+height: 500px;}
+.box10 img:nth-child(1) {margin-left: 140px;
+width: 1630px;}
+.box10 img:nth-child(2) {margin-left: 280px;
+        position: absolute;
+        top: 60px;
+        left: 450px;
+}
+
+/* 상세정보 설정 */
+.box11 {height: 150px;}
+.box11-1{
+        display: flex;
+        justify-content: space-around;
+        height: 60px;
+        }
+.box11-1 p {
+        font-size: 24px;
+        letter-spacing: 5px;
+}
+.line6 {width: 1645px;
+        height: 0px;
+        left: 0px;
+        margin-left: 130px;
+        border-bottom: 2px solid #000000;
+        opacity: 0.4;
+        }
+.box11-1 p:nth-child(1) {font-weight: bold;}
+
+/* box12설정 */
+.box12 {
+        display: flex;
+        margin-left: 160px;
+        height: 800px;
+        }
+.box12-2{margin-left: 130px;}
+.txt12-1 {
+        font-size: 45px;
+        margin-bottom: 10px;
+        }
+.txt12-2{
+        font-size: 25px;
+        margin-bottom: 40px;
+}
+.txt12-3{
+        font-size: 30px;
+        margin-bottom: 145px;
+        letter-spacing: 1.5px;
+}
+.txt12-4{
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 15px;
+}
+.line7{
+        width: 600px;
+        height: 0px;
+        border: 1px solid #000000;
+        margin-bottom: 20px;
+}
+.txt12-5{font-size: 17px;}
+
+/* 리뷰 설정 */
+.box13{height: 700px;}
+.title2 {
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        margin-left: 160px;
+        }
+.line4 {
+        border: 1px solid #000000;
+        margin-left: 130px;
+        margin-right: 130px;
+        margin-bottom: 70px;
+        }
+.box13 ul {
+        display: flex;
+        justify-content: space-around;
+        margin-right: 130px;
+        margin-left: 130px;
+        }
+.good {
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        }
+.re {font-size: 17px;}
+.txtRe{display: flex;
+justify-content: space-between}
+
+/* 상품문의 설정 */
+.box14{height: 700px;}
+.title2 {
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        margin-left: 160px;
+        }
+.line4 {
+        border: 1px solid #000000;
+        margin-left: 130px;
+        margin-right: 130px;
+        margin-bottom: 70px;
+        }
+.box14 li {
+        display: flex;
+        justify-content: space-around;
+        margin-right: 50px;
+        margin-left: 50px;
+        }
+.txt14-1{margin-top: -60px;}
+
+
+/* 배송비절약하기 */
+.box15{height: 780px;}
+.title2 {
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        margin-left: 160px;
+        }
+.line4 {
+        border: 1px solid #000000;
+        margin-left: 130px;
+        margin-right: 130px;
+        margin-bottom: 70px;
+        }
+.box15 ul {
+        display: flex;
+        justify-content: space-around;
+        margin-right: 130px;
+        margin-left: 130px;
+        }
+.txt15-1{
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 10px;
+}
+.txt15-2{font-size: 18px;}
