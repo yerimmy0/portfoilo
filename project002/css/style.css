@@ -23,6 +23,7 @@ body {
         font-family: 'Inter', sans-serif;
     color: #1a1a1a;
     width: 100%;
+    overflow-x: hidden;
     }
 
 /* header설정 */
@@ -30,13 +31,14 @@ body {
         position: absolute;
         right: 0;
         top: 15px;
-        color: #FFFFFF;
+        color: #9a9a9a;
+        font-weight: bold;
         font-size: 16px;
         z-index: 10;
         }
 .login {display: flex;}
 .login li:hover {
-                color: #1a1a1a;
+                color: #F5B602;
                 font-weight: bold;
                 cursor: pointer;
                 }
@@ -45,8 +47,9 @@ body {
         width: 100%;
         height: 22px;
         left: 0px;
-        top: 135px;
-        color: #FFFFFF;
+        top: 125px;
+        color: #5a5a5a;
+        font-weight: bold;
         z-index: 10;
         font-size: 18px;
         }
@@ -61,18 +64,19 @@ body {
         text-align: center;
         }
 .eup li:hover {
-                color: #1a1a1a;
+                color: #F5B602;
                 font-weight: bold;
                 cursor: pointer;
                 }
 
 /* 메뉴 배경설정 */
+
 header {
         position: absolute;
         width: 100%;
-        height: 170px;
+        height: 160px;
         z-index: 999;
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: rgba(255, 255, 255, 0.6);
         }
 
 /* 로고설정 */
@@ -90,13 +94,18 @@ header {
 
 /* hero설정 */
 /* hero 재설정 */
-
+.hero_txt {display: none;}
+.box1-1 {display: none;}
+.box1-2 {display: none;}
+.box1-3 {display: none;}
+.box1-4 {display: none;}
+.box1-5 {display: none;}
 .box1 {
         width: 100%;
         height: 100vh;
-        background-image: url(../img/hero.png);
+        background-image: url(../img/hero11.jpg);
         background-size: cover;
-        background-position: right center;
+        background-position: center center;
         background-repeat: no-repeat;
         }
 .box1 .hero {
@@ -105,7 +114,7 @@ header {
 
         position: absolute;
         left: 10%;
-        top: 23%;
+        top: 22%;
         }
 
 .box1 .hero .hero_txt {
@@ -121,7 +130,7 @@ header {
         }
 .down {
         font-size: 60px;
-        color: #DC913A;
+        color: #F5B602;
         font-family: 'Orelega One', cursive;
         }
 .box1 .hero .dr {
@@ -142,7 +151,7 @@ header {
                 }
 .box1-1 p {
         text-align: center;
-        color: #DC913A;
+        color: #d49c00;
         font-weight: bold;
         font-size: 20px;
         }
@@ -157,14 +166,14 @@ header {
                 }
 .box1-2 p {
         text-align: center;
-        color: #DC913A;
+        color: #d49c00;
         font-weight: bold;
         font-size: 20px;
         }
 .box1 .hero .dr .box1-3 {
                         right: 50%;
                         margin-right: -200px;
-                        bottom: -2%;
+                        bottom: -1%;
                         }
 .box1-3 img     {
                 width: 400px;
@@ -172,7 +181,7 @@ header {
                 }
 .box1-3 p {
         text-align: center;
-        color: #DC913A;
+        color: #d49c00;
         font-weight: bold;
         font-size: 20px;
         }
@@ -187,7 +196,7 @@ header {
                 }
 .box1-4 p {
         text-align: center;
-        color: #DC913A;
+        color: #d49c00;
         font-weight: bold;
         font-size: 20px;
         }
@@ -201,7 +210,7 @@ header {
                 }
 .box1-5 p {
         text-align: center;
-        color: #DC913A;
+        color: #d49c00;
         font-weight: bold;
         font-size: 20px;
         }
@@ -215,7 +224,8 @@ header {
 .box2-1 {position: relative;}
 .info {
         position: absolute;
-        color: #FFC318;
+        color: #d49c00;
+        font-family: 'Inter', sans-serif;
         top: 90px;
         left: 100px;
         }
@@ -227,7 +237,7 @@ header {
                 margin-bottom: 25px;
                 }
 .info_txt {
-        color: #6A6A6A;
+        color: #3A3A3A;
         margin-bottom: 100px;
         }
 .info .click {
@@ -245,7 +255,7 @@ header {
 /* 네모박스 */
 .meno {
         position: absolute;
-        border: 5px solid #FFE194;
+        border: 5px solid #F5B602;
         border-radius: 230px;
         width: 849px;
         height: 893px;
@@ -277,15 +287,15 @@ header {
 .drink img{
         width: 600px;
         height: 600px;
-}
+        }
 /* menuBox 설정  
- 중간이상으로 지나갈때 안보이게 하기 위해 박스의 
- overflow:hidden 이 필요함 
- 그래서 menuBox 사이즈가 있어야 하고 그 안에 ul은 트레일러가 되어서 
+중간이상으로 지나갈때 안보이게 하기 위해 박스의 
+overflow:hidden 이 필요함 
+그래서 menuBox 사이즈가 있어야 하고 그 안에 ul은 트레일러가 되어서 
  슬라이드 시켜야함  */
 
 
- .menuBox {
+.menuBox {
         width: 60%;
         height: 100%;
         overflow: hidden;
@@ -297,7 +307,7 @@ header {
 /* 화살표설정 */
 .left {
         position: absolute;
-        color: #FFBD00;
+        color: #F5B602;
         font-weight: bold;
         top: 50%;
         left: 60px;
@@ -313,7 +323,7 @@ header {
         }
 .right {
         position: absolute;
-        color: #FFBD00;
+        color: #F5B602;
         font-weight: bold;
         top: 50%;
         display: block;
@@ -326,10 +336,6 @@ header {
         }
 .left:hover {opacity: 0.9;}
 .right:hover {opacity: 0.9;}
-
-
-
-
 .txt2-1 {
         font-size: 20px;
         font-weight: bold;
@@ -351,65 +357,6 @@ header {
         }
 .txt2-7 {font-size: 12px;}
 
-/* .box2-2 {
-        position: absolute;
-        left: 600px;
-        top: 120px;
-        }
-.box2-2 img {
-                width: 550px;
-                height: 550px;
-                }
-.box2-2 p {text-align: center;}
-.txt2-1 {
-        font-weight: bold;
-        font-size: 26px;
-        }
-.txt2-2 {
-        font-size: 14px;
-        margin-top: 8px;
-        margin-bottom: 15px;
-        }
-.txt2-3 {
-        font-size: 15px;
-        line-height: 22px;
-        }
-.box2-3 {
-        position: absolute;
-        right: 430px;
-        top: 250px;
-        }
-.box2-3 img {
-        width: 380px;
-        height: 380px;
-        }
-.box2-3 p {text-align: center;}
-.txt2-4 {
-        font-size: 16px;
-        font-weight: bold;
-        margin-bottom: 5px;
-        }
-.txt2-5 {font-size: 11px;}
-.box2-4 {
-        position: absolute;
-        right: 120px;
-        top: 250px;
-        }
-.box2-4 img {
-                width: 380px;
-                height: 380px;
-                }
-.box2-4 p {text-align: center;}
-.txt2-6 {
-        font-size: 16px;
-        font-weight: bold;
-        margin-bottom: 5px;
-        }
-.txt2-7 {font-size: 11px;} */
-
-/* 메뉴 화살표 */
-/*  */
-
 /* 읍천리 history */
 .box3 {
         position: relative;
@@ -418,11 +365,13 @@ header {
         width: 100%;
         margin: 200px auto;
         z-index: 1;
-        margin-bottom: 350px;
-}
-.box3-1 {width: 50%;
-margin-left: 8.5%;
-margin-top: 140px;}
+        margin-bottom: 1px;
+        }
+.box3-1 {
+        width: 50%;
+        margin-left: 8.5%;
+        margin-top: 140px;
+        }
 .box3-2 {box-sizing: border-box;}
 .pro2  {
         font-size: 60px;
@@ -442,7 +391,7 @@ margin-top: 140px;}
         }
 .txt3-3{
         font-size: 22px;
-        margin-bottom: 80px;
+        margin-bottom: 50px;
         line-height: 27px;
         }
 .box3-1 button {
@@ -454,8 +403,10 @@ margin-top: 140px;}
                 }
 .box3-1 button:hover {
                         cursor: pointer;
-                        background-color: rgba(0, 0, 0, 0.1);
-                        opacity: 0.3;
+                        background-color: rgba(0, 0, 0, 0.4);
+                        color: #fff;
+                        border: none;
+                        font-weight: bold;
                         }
 .txt3-4 {
         position: absolute;
@@ -476,89 +427,30 @@ margin-top: 140px;}
         right: 800px;
         z-index: 5;
         }
-/* .box3 {
-        display: flex;
-        justify-content: space-between;
-}
-.box3-1 {
-        position: absolute;
-        left: 15%;
+
+/* 비디오 설정 */
+.video {
+        width: 100%;
+        height: 100vh;
         }
-.box3-2 {box-sizing: border-box;}
-.imgBox2 {right: -50px;}
-.box3-1 h3      {
-                color: #F33C01;
-                font-weight: bold;
-                font-size: 55px;
-                margin-bottom: 60px;
-                font-family: 'Niramit', sans-serif;
+.video video    {
+                width: 100%;
                 }
 
-.txt3-1 {
-        color: #6A6A6A;
-        font-size: 25px;
-        line-height: 36px;
-        font-family: 'Nanum Gothic', sans-serif;
-}
-.txt3-1 b {
-        color: #1a1a1a;
-        font-size: 30px;
-        }
-.txt3-2 {
-        margin-top: 35px;
-        margin-bottom: 35px;
-        color: #6A6A6A;
-        font-size: 25px;
-        line-height: 36px;
-        }
-.txt3-3 {
-        color: #6A6A6A;
-        font-size: 25px;
-        margin-bottom: 85px;
-        }
-.box3-1 button {
-                background-color: #fff;
-                border: 1px solid #4E4E4E;
-                width: 150px;
-                height: 50px;
-                font-size: 18px;
-                }
-.box3-1 button:hover {
-                        cursor: pointer;
-                        background-color: rgba(0, 0, 0, 0.1);
-                        opacity: 0.3;
-                        }
-.txt3-4 {
-        position: absolute;
-        top: 55px;
-        color: #C6B085;
-        font-weight: bold;
-        font-size: 50px;
-        right: 15px;
-        }
-.txt3-5 {
-        position: absolute;
-        transform: rotate(-90deg);
-        color: #fff;
-        font-weight: bold;
-        bottom: 180px;
-        letter-spacing: 3px;
-        font-size: 50px;
-        left: -90px;
-        } */
 
 /* product menu설정 */
 .box4 {
         display: flex;
         justify-content: space-evenly;
         width: 100%;
-        margin: 200px auto;}
+        margin: 100px auto;
+        margin-top: 300px;}
 .box4-2 {box-sizing: border-box;}
 .pro    {
-        font-size: 60px;
-        color: #99896A;
+        font-size: 70px;
+        color: #F5B602;
         font-weight: bold;
-        margin-bottom: 40px;
+        margin-bottom: 35px;
         }
 .txt4-1 {
         font-size: 21px;
@@ -571,7 +463,7 @@ margin-top: 140px;}
         }
 .txt4-3{
         font-size: 20px;
-        margin-bottom: 80px;
+        margin-bottom: 70px;
         line-height: 27px;
         }
 .txt4-4 {
@@ -617,16 +509,9 @@ margin-top: 140px;}
                 width: 1550px;
                 margin-right: 20px;
                 box-sizing: border-box;
-
-        }
-/* .ch     {
-        border-bottom: 1px solid #000;
-        width: 2000px;
-        height: 37px;
-        margin-bottom: 20px;
-        /* margin-right: -500px; */
-        /* } */
+                }
 .md input:hover{cursor: pointer;}
+
 /* 상품 가로정렬하기 */
 .produ {
         display: flex;
@@ -639,13 +524,13 @@ margin-top: 140px;}
 .box6-3 {margin-right: 90px;}
 .box6-4 {margin-right: 90px;}
 .produ p {text-align: center;}
-.main{
+.main   {
         font-size: 20px;
         font-weight: bold;
         margin-top: 15px;
         margin-bottom: 15px;
         }
-.eng {
+.eng    {
         font-size: 15px;
         margin-bottom: 35px;
         width: 330px;
@@ -660,6 +545,7 @@ margin-top: 140px;}
                 opacity: 0.7;
                 }
 .produ img {background-size: cover;}
+
 /* notice 설정 */
 .box5 {
         display: flex;
@@ -673,7 +559,7 @@ margin-top: 140px;}
         opacity: 0.8;
         transform: rotate(90deg);
         height: 0;
-        width: 30px;
+        width: 20px;
         margin-top: 20px;
         }
 .line2 {
@@ -681,7 +567,7 @@ margin-top: 140px;}
         opacity: 0.8;
         transform: rotate(90deg);
         height: 0;
-        width: 30px;
+        width: 20px;
         margin-top: 20px;
         }
 .box5-1 {
@@ -702,18 +588,34 @@ margin-top: 140px;}
         }
 .txt5-2 {
         margin-top: 10px;
-        margin-left: 15px;
+        margin-left: 30px;
         font-size: 16px;
-        width: 80%;
+        width: 87%;
         display: flex;
         justify-content: space-between;
-
+        }
+.txt5-5 {
+        margin-top: 10px;
+        margin-left: 30px;
+        margin-right: -150px;
+        font-size: 16px;
+        width: 87%;
+        display: flex;
+        justify-content: space-between;
         }
 .txt5-2 a:hover {
                 cursor: pointer;
                 opacity: 0.6;
                 }
 .txt5-2 p:hover {
+                cursor: pointer;
+                opacity: 0.6;
+                }
+.txt5-5 a:hover {
+                cursor: pointer;
+                opacity: 0.6;
+                }
+.txt5-5 p:hover {
                 cursor: pointer;
                 opacity: 0.6;
                 }
@@ -739,7 +641,7 @@ margin-top: 140px;}
         }
 
 /* footer설정 */
-footer{
+footer  {
         background-color: #393737;
         color: #fff;
         display: flex;
@@ -758,6 +660,7 @@ footer{
 .txt6-2 {margin-bottom: 15px;}
 .txt6-3 {margin-bottom: 15px;}
 .txt6-4 {margin-bottom: 15px;}
+.txt6-1 span{color: #fff;}
 .txt6-2 span    {
                 margin-right: 20px;
                 letter-spacing: 0.5px;
@@ -766,6 +669,10 @@ footer{
                 margin-right: 15px;
                 letter-spacing: 0.5px;
                 }
+.txt6-1 a span:hover    {
+                        cursor: pointer;
+                        color: #6a6a6a;
+                        }
 
 /* footer CALL CENTER설정 */
 .footer2 {
@@ -830,91 +737,196 @@ footer{
                 max-width:45px;
                 height: 45px;
                 }
-.footer3 li a:hover img {opacity: 0.6;}   
+.footer3 li a:hover img {opacity: 0.5;}   
 
 
 
 /* 서브페이지 만들기 */
-section{overflow: hidden;}
 .box7 {
-        position: relative;
-        height: 1300px;
-        }
-.box7 img {
-        margin-top: 300px;
-        margin-left: 160px;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        padding: 0px auto;
+        padding-top: 220px;
+        padding-bottom: 65px;
+        background-image: url(../img/hero9.jpg);
+        opacity: 0.3px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
         }
 .box7-1 {
-        position: absolute;
-        margin-top: -690px;
-        right: 350px;
+        width: 35%;
+        margin-bottom: 15px;
         }
-.swp2 {
-        font-size: 50px;
-        font-weight: bold;
-        margin-bottom: 18px;
-        }
-.swp3 {
-        font-size: 23px;
-        margin-bottom: 25px;
+.box7-3 {width: 23%;}
+.box7-3 img{
+        box-sizing: border-box;
+        width: 590px;
+        height: 700px;
         }
 .line3 {
-        width: 615px;
+        width: 666px;
         height: 0px;
         left: 736px;
         top: 354px;
         border: 1px solid #000000;
         margin-bottom: 40px;
         }
-.txt7-1 {display: flex;}
-.txt7-2 {display: flex;}
-.txt7-3 {display: flex;}
-.txt7-4 {display: flex;}
-.word   {
-        margin-right: 430px;
-        margin-bottom: 40px;
-        font-size: 22px;
+.txt7-1 {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
         }
-.price {
-        margin-left: 10px;
-        font-size: 24px;
-        font-weight: bold;
+.txt7-2 {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
         }
-.open {
-        margin-left: 8px;
-        font-size: 21px;
+.txt7-3 {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
         }
-.point {font-size: 20px;}
+.txt7-4 {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        }
 .txt7-4 button {
                 width: 115px;
                 height: 40px;
                 margin-left: 26px;
+                font-weight: bold;
+                background-color: #fff;
+                border: 1px solid #9a9a9a;
+                color: #3a3a3a;
                 }
+.txt7-4 button:hover{
+        cursor: pointer;
+        background-color: #6a6a6a;
+        color: #fff;
+        border: none;
+        }
 .txt7-4 button div {
                 word-spacing: 20px;
                 font-size: 15px;
                 }
-
+.swp2   {
+        font-size: 50px;
+        font-weight: bold;
+        }
+.swp3 {
+        font-size: 21px;
+        margin-bottom: 25px;
+        }
+.word   {
+        font-size: 30px;
+        font-weight: bold;
+        }
+.price  {
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+        width: 20%;
+        }
+.open:hover {
+                        cursor: pointer;
+                        color: #d49c00;
+                        }
+.word {
+        font-size: 22px;
+        color: #4E4E4E;
+        font-weight: bold;
+        }
+.box7-2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        }
+.btn1 {
+        width:330px;
+        height: 55px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-weight: bold;
+        background-color: #fff;
+        border: 1px solid #9a9a9a;
+        }
+.btn2   {
+        width:330px;
+        height: 55px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-weight: bold;
+        background-color: #fff;
+        border: 1px solid #9a9a9a;
+        }
+.btn3   {
+        width: 666px;
+        height: 55px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin-bottom: 15px;
+        background-color: #000;
+        color: #fff;
+        font-weight: bold;
+        border: none;
+        }
+.btn4   {
+        width: 666px;
+        height: 55px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        background-color: #fff;
+        border: 1px solid #9a9a9a;
+        font-weight: bold;
+        }
+.btn1:hover{
+        cursor: pointer;
+        background-color: #6a6a6a;
+        color: #fff;
+        border: none;
+        }
+.btn2:hover{
+        cursor: pointer;
+        background-color: #6a6a6a;
+        color: #fff;
+        border: none;
+        }
+.btn3:hover{
+        cursor: pointer;
+        background-color: #9a8a9a;
+        color: #fff;
+        border: none;
+        }
+.btn4:hover{
+        cursor: pointer;
+        background-color: #6a6a6a;
+        color: #fff;
+        border: none;
+        }
+.swpBox>div {margin-bottom: 50px;}
 
 /* 같이 먹기 좋은 음료 설정 */
-.box8{height: 850px;}
-.title2 {
-        font-size: 25px;
-        font-weight: bold;
-        margin-bottom: 15px;
-        margin-left: 160px;
+.box8   {
+        margin-top: 100px;
+        height: 850px;
+        width: 100%;
         }
-.line4 {
-        border: 1px solid #000000;
-        margin-left: 130px;
-        margin-right: 130px;
-        margin-bottom: 70px;
+.box8 img {
+        width: 310px;
+        height: 400px;
         }
 .box8 ul {
         display: flex;
         justify-content: space-around;
-        margin-right: 130px;
-        margin-left: 130px;
+        text-align: left;
+        margin-right: 140px;
+        margin-left: 100px;
+        width: 1700px;
         }
 .dri    {
         margin-top: 12px;
@@ -924,11 +936,22 @@ section{overflow: hidden;}
         }
 .pri {
         font-size: 20px;
-        margin-right: 230px;
+        margin-right: 210px;
         font-size: 18px;
         }
 .bot {display: flex;}
-
+.box8 img:hover{
+                cursor: pointer;
+                opacity: 0.6;
+                }
+.dri:hover {
+        cursor: pointer;
+        color: #d49c00;
+        }
+.re2:hover {
+        cursor: pointer;
+        font-weight: bold;
+        }
 /* 회원혜택안내설정*/
 .box9 {height: 510px;}
 .box9 ul {
@@ -938,7 +961,6 @@ section{overflow: hidden;}
         margin-left: 100px;
         text-align: center;
         }
-
 .title3 {
         font-size: 24px;
         font-weight: bold;
@@ -963,57 +985,59 @@ section{overflow: hidden;}
 .box10 {
         position: relative;
         height: 500px;
+        width: 100%;
+        text-align: center;
         }
 .box10 img:nth-child(1) {
-                        margin-left: 140px;
-                        width: 1630px;
+                        width: 100%;
+                        max-width: 1630px;
                         }
 .box10 img:nth-child(2) {
-                        margin-left: 280px;
+                        margin-left: -218px;
                         position: absolute;
                         top: 60px;
-                        left: 450px;
+                        left:50%;
                         }
 
 /* 상세정보 설정 */
-.box11 {height: 150px;}
-.box11-1{
-        display: flex;
-        justify-content: space-around;
-        height: 60px;
+.box11  {position: relative;}
+.title2 {
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        margin-left: 160px;
         }
-.box11-1 p {
-        font-size: 24px;
-        letter-spacing: 5px;
-        }
-.line6 {
-        width: 1645px;
-        height: 0px;
-        left: 0px;
+.line4 {
+        border: 1px solid #000000;
         margin-left: 130px;
-        border-bottom: 2px solid #000000;
-        opacity: 0.4;
+        margin-right: 130px;
         }
-.box11-1 p:nth-child(1) {font-weight: bold;}
 
 /* box12설정 */
 .box12 {
         display: flex;
-        margin-left: 160px;
-        height: 800px;
+        justify-content: space-between;
+        height: 850px;
         }
-.box12-2{margin-left: 130px;}
+.box12-1 {
+        width: 670px;
+        height: 680px;
+        margin-left: 210px;
+        }
+.box12-2{margin-right: 330px;}
+
 .txt12-1 {
-        font-size: 45px;
+        font-size: 40px;
         margin-bottom: 10px;
+        font-weight: bold;
         }
 .txt12-2{
-        font-size: 25px;
-        margin-bottom: 40px;
+        font-size: 22px;
+        margin-bottom: 33px;
         }
 .txt12-3{
-        font-size: 30px;
-        margin-bottom: 145px;
+        font-size: 26px;
+        margin-bottom: 175px;
         letter-spacing: 1.5px;
         }
 .txt12-4{
@@ -1030,7 +1054,8 @@ section{overflow: hidden;}
 .txt12-5{font-size: 17px;}
 
 /* 리뷰 설정 */
-.box13{height: 700px;}
+
+.box13{height: 850px;}
 .title2 {
         font-size: 25px;
         font-weight: bold;
@@ -1055,14 +1080,64 @@ section{overflow: hidden;}
         margin-top: 10px;
         margin-bottom: 5px;
         }
-.re {font-size: 17px;}
 .txtRe  {
         display: flex;
         justify-content: space-between;
+        width: 310px;
         }
+.re {font-size: 17px;}
+.re:hover {
+        cursor: pointer;
+        font-weight: bold;
+        color: #d49c00;
+        }
+.heartBox {
+        width: 30px;
+        height: 30px;
+        float: left;
+        position: relative;
+        }
+.heartBox img {
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                opacity: 0;
+                }
+.heartBox img:nth-child(1){opacity: 1;}
+.heartBox:hover img:nth-child(1) {
+                                cursor: pointer;
+                                opacity: 0;
+                                }
+.heartBox:hover img:nth-child(2) {
+                                cursor: pointer;
+                                opacity: 1;
+                                }
 
+.rev    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center center;
+        }
+.click2 {
+        position: absolute;
+        right: 0;
+        margin-right: 100px;
+        width:150px;
+        margin-top: 15px;
+        }
+.point {margin-left: 10px;}
+.click2:hover {
+        cursor: pointer;
+        font-weight: bold;
+        color: #d49c00;
+        }
 /* 상품문의 설정 */
-.box14{height: 700px;}
+.box14  {
+        height: 820px;
+        position: relative;
+        }
 .title2 {
         font-size: 25px;
         font-weight: bold;
@@ -1073,16 +1148,105 @@ section{overflow: hidden;}
         border: 1px solid #000000;
         margin-left: 130px;
         margin-right: 130px;
-        margin-bottom: 70px;
         }
+.pBox1  {
+        width: 10%;
+        text-align: center;
+        }
+.pBox2  {
+        width: 50%;
+        text-align: center;
+        }
+.pBox2:hover {
+        cursor: pointer;
+        font-weight: bold;
+        }
+.txt14-1 .pBox2:hover {
+                cursor: default;
+                font-weight: normal;
+                }
+.pBox3  {
+        width: 10%;
+        text-align: center;
+        }
+.pBox4  {
+        width: 10%;
+        text-align: center;
+        }
+.pBox5  {
+        width: 10%;
+        text-align: center;
+        }
+.box14 ul {margin-top: -50px;}
 .box14 li {
         display: flex;
-        justify-content: space-around;
-        margin-right: 50px;
-        margin-left: 50px;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 135px;
+        margin-bottom: 18px;
+        padding-bottom: 18px;
+        width: 1630px;
+        border-bottom: 1px solid #6a6a6a;
         }
-.txt14-1{margin-top: -60px;}
+.box14 img {
+        width: 23px;
+        height: 23px;
+        margin-right: 5px;
+        }
 
+.number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+.number span {
+        margin: 50px;
+        font-size: 20px;
+        width: 100%;
+        }
+.number span:hover {
+                cursor: pointer;
+                color: #F5B602;
+                }
+.button2 {
+        display: flex;
+        justify-content: flex-end;
+        right: 150px;
+        position: absolute;
+        }
+.ho     {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+.btn5   {
+        margin-right: 10px;
+        width: 150px;
+        height: 40px;
+        font-size: 15px;
+        background-color: #fff;
+        border: 1px solid #6a6a6a;
+        color: #1a1a1a;
+        }
+.btn6   {
+        margin-right: 5px;
+        width: 150px;
+        height: 40px;
+        font-size: 15px;
+        background-color: #fff;
+        border: 1px solid #6a6a6a;
+        color: #1a1a1a;
+        }
+.btn5:hover {
+        cursor: pointer;
+        background-color: #9a9a9a;
+        border: none;
+        color: #fff;}
+.btn6:hover {
+        cursor: pointer;
+        background-color: #9a9a9a;
+        border: none;
+        color: #fff;}
 
 /* 배송비절약하기 */
 .box15{height: 780px;}
@@ -1101,8 +1265,8 @@ section{overflow: hidden;}
 .box15 ul {
         display: flex;
         justify-content: space-around;
-        margin-right: 130px;
-        margin-left: 130px;
+        margin-right: 100px;
+        margin-left: 100px;
         }
 .txt15-1{
         font-size: 20px;
@@ -1111,3 +1275,14 @@ section{overflow: hidden;}
         margin-bottom: 10px;
         }
 .txt15-2{font-size: 18px;}
+.box15 ul li img {
+                width: 330px;
+                height: 435px;
+                object-fit: contain;
+                }
+.box15 ul li img:hover {
+                        cursor: pointer;
+                        opacity: 0.5;
+                        }
+.txt15-1:hover {cursor: pointer;
+        color: #d49c00;}
