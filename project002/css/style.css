@@ -1091,6 +1091,10 @@ footer  {
         font-weight: bold;
         color: #d49c00;
         }
+.box13 ul li img:hover {
+                        cursor: pointer;
+                        opacity: 0.6;
+                        }
 .heartBox {
         width: 30px;
         height: 30px;
@@ -1133,6 +1137,7 @@ footer  {
         font-weight: bold;
         color: #d49c00;
         }
+
 /* 상품문의 설정 */
 .box14  {
         height: 820px;
@@ -1162,9 +1167,9 @@ footer  {
         font-weight: bold;
         }
 .txt14-1 .pBox2:hover {
-                cursor: default;
-                font-weight: normal;
-                }
+                        cursor: default;
+                        font-weight: normal;
+                        }
 .pBox3  {
         width: 10%;
         text-align: center;
@@ -1241,12 +1246,14 @@ footer  {
         cursor: pointer;
         background-color: #9a9a9a;
         border: none;
-        color: #fff;}
+        color: #fff;
+        }
 .btn6:hover {
         cursor: pointer;
         background-color: #9a9a9a;
         border: none;
-        color: #fff;}
+        color: #fff;
+        }
 
 /* 배송비절약하기 */
 .box15{height: 780px;}
@@ -1284,5 +1291,7 @@ footer  {
                         cursor: pointer;
                         opacity: 0.5;
                         }
-.txt15-1:hover {cursor: pointer;
-        color: #d49c00;}
+.txt15-1:hover {
+                cursor: pointer;
+                color: #d49c00;
+                }
