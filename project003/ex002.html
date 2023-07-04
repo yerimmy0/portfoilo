@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서브html로 연결하는 예제</title>
+    <link rel="stylesheet" href="css/ex002.css">
+    <!-- 제이쿼리CDN -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="js/ex002.js"></script>
+
+</head>
+<body>
+    <h1><a href="ex002.html">미니언즈</a></h1> 
+    <!-- a링크 안에 넣은 것 : 로고를 누르면 첫 페이지로 이동해야함 -->
+    <nav>
+        <ul>
+            <li class="on">
+                <a href="sub/about.html">
+                    About
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="sub/fil.html">
+                    Filmography
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="sub/gallery.html">
+                    Gallery
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="sub/video.html">
+                    Video
+                    <span></span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+        <section class="main">
+            <div class="cursor"></div>
+            <p>난 나를 위해 <em>시간</em>을 내는<br>
+                사람을 위해 <span>시간</span>을 낸다.</p>
+            <div class="wel">
+                <a href="sub/about.html">Welcome</a>
+            </div>
+        </section>
+
+</body>
+</html>
