@@ -9,41 +9,44 @@
 
 /* 전체설정 */
 *   {
-    margin: 0;
-    padding: 0;
-    }
+        margin: 0;
+        padding: 0;
+        }
 ul,ol {list-style: none;}
 a   {
-    text-decoration: none;
-    color: #000;
-    }
+        text-decoration: none;
+        color: #000;
+        }
 img {
-    border: none;
-    vertical-align: bottom;
-    }
+        border: none;
+        vertical-align: bottom;
+        }
 
 /* header설정 */
 
 /* boxA가로정렬(5:5) */
 .boxA {
-    display: flex;
-    width: 100%;
-    height: 100vh
-    }
+        display: flex;
+        width: 100%;
+        height: 100vh
+        }
 .boxA1 {
-    display: flex;
-    position: relative;
-    width: 50%;
-    height: 100%;
-    }
-.boxA2 {width: 50%;}
+        display: flex;
+        position: relative;
+        width: 50%;
+        height: 100%;
+        }
+.boxA2 {
+        width: 50%;
+        z-index: 99;
+}
 
 /* 헤더네비 설정 */
 .menu {
-    position: absolute;
-    bottom: 8%;
-    left: 10%;
-    }
+        position: absolute;
+        bottom: 8%;
+        left: 10%;
+        }
 .menu ul {}
 .menu li {
         width: 150px;
@@ -101,29 +104,29 @@ img {
 
 /* 헤더사진 설정 */
 .boxA2 img {
-            width: 100%;
-            height: 100%;
-            background-image: url(../img/main.png) ;
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: contain;
-            }
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/main.png) ;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        }
 
 /* of sf9, 이미지 설정 */
 .letbot ul {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 5px;
-            }
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+        }
 .letbot li {
-            display: flex;
-            background-color: #d9d9d9;
-            justify-content: center;
-            align-items: center;
-            width: 40px;
-            height: 40px;
-            border-radius: 20px;
-            }
+        display: flex;
+        background-color: #d9d9d9;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        }
 .letbot img{margin-bottom: 6px;}
 .letbot li:hover{
                 cursor: pointer;
@@ -132,13 +135,16 @@ img {
 
 /* 섹션1 설정 */
 .box1 {position: relative;}
-.nav2 {
-    position: absolute;
-    top: 3.5%;
-    right: 1%;
-    }
-.nav2 ul {display: flex;}
-.nav2 li {
+.n2 {
+        /* display: none; */
+        position: absolute;
+        position: fixed;
+        top: 3.5%;
+        right: 1%;
+        z-index: 98;
+        }
+.n2 ul {display: flex;}
+.n2 li {
         /* background-color: aqua; */
         width: 120px;
         height: 35px;
@@ -148,50 +154,49 @@ img {
         position: relative;
         margin-right: 10px;
         }
-.nav2 li em {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-weight: bold;
-            }
-.nav2 li span {
-            width: 3%;
-            left: 0px;
-            top: -5px;
-            height: 85%;
-            background-color: #8f8cae;
-            display: block;
-            position: absolute;
-            transition: all 0.8s;
-            z-index: -1;
-            transform: skewX(-20deg);
-            box-shadow: 1px 1px 1px #6a6a6a;
-            }
-.nav2 li:nth-child(4) span {width: 2.5%;}
-.nav2 li:nth-child(4) {width: 170px;}
-.nav2 li:hover {
-            font-weight: bold;
-            color: #fff;
-            }
-.nav2 li:hover span {width: 100%;}
+.n2 li em {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: bold;
+                }
+.n2 li span {
+                width: 3%;
+                left: 0px;
+                top: -5px;
+                height: 85%;
+                background-color: #8f8cae;
+                display: block;
+                position: absolute;
+                transition: all 0.8s;
+                z-index: -1;
+                transform: skewX(-20deg);
+                box-shadow: 1px 1px 1px #6a6a6a;
+                }
+.n2 li:nth-child(4) span {width: 2.5%;}
+.n2 li:nth-child(4) {width: 170px;}
+.n2 li:hover {
+                font-weight: bold;
+                color: #fff;
+                }
+.n2 li:hover span {width: 100%;}
 .fi em:hover span {width: 100%;}
-.nav2 li.on2 span {width: 100%;}
-.nav2 li.on2 em {
+.n2 li.on2 span {width: 100%;}
+.n2 li.on2 em {
                 color: #fff;
                 font-weight: bold;
                 }
-.nav2 li:nth-child(2) span {background-color: #8f8cae;}
 
 /* 프로필 사진 설정 */
 .box1 {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    }
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        }
 .profile_left {
-            height: 100%;
-            width: 50%;
-            }
+                height: 100%;
+                width: 50%;
+                }
 .profile_left>img{height: 100%;}
 
 /* 프로필 글씨 설정 */
@@ -229,18 +234,18 @@ img {
         z-index: 10;
         }
 .line {
-    position: absolute;
-    border: 7px solid #a39df2;
-    width: 270px;
-    margin-left: -5px;
-    opacity: 40%;
-    z-index: 1;
-    }
+        position: absolute;
+        border: 7px solid #a39df2;
+        width: 270px;
+        margin-left: -5px;
+        opacity: 40%;
+        z-index: 1;
+        }
 .cal {
-    font-family: 'Istok Web', sans-serif;
-    margin-top: 20px;
-    font-size: 16px;
-    }
+        font-family: 'Istok Web', sans-serif;
+        margin-top: 20px;
+        font-size: 16px;
+        }
 .ex1>p {
         position: absolute;
         right: 185px;
@@ -277,15 +282,15 @@ img {
         bottom: 335px;
         right: 155px;
         }
-.ex3{
-    position: absolute;
-    right: 165px;
-    bottom: 135px;
-    width: 750px;
-    height: 175px;
-    border-radius: 10px;
-    background: rgba(186, 184, 208, 0.60);
-    }
+.ex3 {
+        position: absolute;
+        right: 165px;
+        bottom: 135px;
+        width: 750px;
+        height: 175px;
+        border-radius: 10px;
+        background: rgba(186, 184, 208, 0.60);
+        }
 .ex3>p {
         font-family: 'Katibeh', cursive;
         font-size: 45px;
@@ -307,10 +312,10 @@ img {
         margin-top: 25px;
         }
 .ex3>div>a {
-            color: #fff;
-            font-family: 'Istok Web', sans-serif;
-            font-size: 20px;
-            }
+                color: #fff;
+                font-family: 'Istok Web', sans-serif;
+                font-size: 20px;
+                }
 .ex3>div>a:hover {
                 font-weight: bold;
                 color: #0E1051;
@@ -319,13 +324,13 @@ img {
 
 /* 포토 섹션 설정 */
 .box2 {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-color: #d8d8e9; /* d4d4ee */
-    z-index: 1;x
-    overflow: hidden;
-    }
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background-color: #d8d8e9; /* d4d4ee */
+        z-index: 1;
+        overflow: hidden;
+        }
 .title2 {
         position: absolute;
         top: 20px;
@@ -338,15 +343,15 @@ img {
         }
 
 /* 메뉴설정 */
-.nav3 {
-    position: absolute;
-    top: 3.5%;
-    right: 1%;
-    }
+/* .nav3 {
+        position: absolute;
+        top: 3.5%;
+        right: 1%;
+        }
 .nav3 ul {display: flex;}
 .nav3 li {
         /* background-color: aqua; */
-        width: 120px;
+        /* width: 120px;
         height: 35px;
         font-size: 16px;
         color: #1a1a1a;
@@ -355,11 +360,11 @@ img {
         margin-right: 10px;
         }
 .nav3 li em {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-weight: bold;
-            }
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: bold;
+                }
 .nav3 li span {
                 width: 3%;
                 left: 0px;
@@ -385,14 +390,29 @@ img {
 .nav3 li.on3 em {
                 color: #fff;
                 font-weight: bold;
-                }
+                }  */
 
 /* actor이미지 설정 */
+.pho1 {
+        
+        /* width: 50%;
+        height: 100%;
+        right: 0;
+        top: 0; */
+}
+.actor {
+        overflow: hidden;
+        width: 60%;
+        height: 40%;
+        /* background-color: #238aeb; */
+        position: absolute;
+        right: 860px;
+        }
 .actor ul {
         display: flex;
         margin-top: 120px;
         position: absolute;
-        left: -620px;
+        right: 0;
         }
 .actor>ul>li {margin-right: 20px;}
 .actor>ul>li>img {
@@ -402,19 +422,19 @@ img {
 .name2 {
         position: absolute;
         top: 89px;
-        left: 995px;
+        left: 955px;
         font-family: 'Megrim', cursive;
         font-size: 42px;
         color: #d6621e;
         z-index: 99;
         }
 .pho1>img {
-            position: absolute;
-            top: 300px;
-            left: 1068px;
-            width: 25px;
-            height: 25px;
-            }
+        position: absolute;
+        top: 300px;
+        left: 1040px;
+        width: 25px;
+        height: 25px;
+        }
 .pho1>img:hover {cursor: pointer;}
 
 /* pho2 설정 */
@@ -436,50 +456,71 @@ img {
 
 /* pho3설정 */
 .pho3{
-    position: absolute;
-    bottom: 515px;
-    left: -725px;
-    }
-.daily ul{
+        /* bottom: 515px;
+        left: -725px; */
+        }
+.daily {
+        overflow: hidden;
+        position: absolute;
+        width: 36%;
+        height: 45%;
+        bottom: 8%;
+        /* background-color: #C06363; */
+        }
+.daily ul {
         display: flex;
         position: absolute;
+        right: 0;
+        height: 413px;
         }
-.daily ul li {margin-right: 20px;}
+.daily>ul>li {margin-right: 20px;}
+.daily>ul>li>img {
+                width: 333px;
+                height: 413px;
+                }
+.pho3>img {
+        position: absolute;
+        bottom: 100px;
+        left: 680px;
+        width: 25px;
+        height: 25px;
+        }
+.pho3>img:hover {cursor: pointer;}
 .name3 {
         position: absolute;
-        margin-left: 1330px;
-        top: -34px;
+        margin-left: 605px;
+        top: 420px;
         font-family: 'Megrim', cursive;
         font-size: 45px;
         color: #8520d8;
         z-index: 99;
         }
-.pho3>img {
-        position: absolute;
-        top: 387px;
-        left: 1400px;
-        width: 25px;
-        height: 25px;
-        }
-.pho3>img:hover {cursor: pointer;}
 
 /* pho4설정 */
-.pho4 {
-    position: absolute;
-    right: 170px;
-    top: 465px;
-    width: 650px;
-    height: 430px
-    }
-.singer {display: flex;}
-.pho4 ul li {
-            margin-bottom: 20px;
-            margin-right: 20px;
-            }
+.singer{
+        position: absolute;
+        width: 34%;
+        height: 52%;
+        /* background-color: #d6621e; */
+        right: 200px;
+        bottom: 0;
+        display: flex;
+        overflow: hidden;
+}
+.singer ul {
+        position: absolute;
+        top: 0;
+        right: 0;
+        }
+.imgBox3 {left: 0;}
+.singer ul li {
+                margin-right: 10px;
+                margin-bottom: 20px;
+                }
 .name4 {
         position: absolute;
-        top: -35px;
-        left: -50px;
+        top: 435px;
+        right: 750px;
         font-family: 'Megrim', cursive;
         font-size: 45px;
         color: #238aeb;
@@ -487,22 +528,23 @@ img {
         }
 .pho4>img {
         position: absolute;
-        top: 450px;
-        left: -35px;
+        bottom: 30px;
+        right: 860px;
         width: 25px;
         height: 25px;
         }
 .pho4>img:hover {cursor: pointer;}
 
+
 /* filmography박스 설정 */
 .box3 {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-color: #000;
-    overflow: hidden;
-    z-index: 1;
-    }
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background-color: #000;
+        overflow: hidden;
+        z-index: 1;
+        }
 .title3 {
         position: absolute;
         top: 20px;
@@ -516,15 +558,15 @@ img {
         }
 
 /* 메뉴설정 */
-.nav4 {
-    position: absolute;
-    top: 3.5%;
-    right: 1%;
-    }
+/* .nav4 {
+        position: absolute;
+        top: 3.5%;
+        right: 1%;
+        }
 .nav4 ul {display: flex;}
-.nav4 li {
+.nav4 li { */
         /* background-color: aqua; */
-        width: 120px;
+        /* width: 120px;
         height: 35px;
         font-size: 16px;
         color: #1a1a1a;
@@ -533,25 +575,25 @@ img {
         margin-right: 10px;
         }
 .nav4 li em {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-weight: bold;
-            color: #fff;
-            }
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: bold;
+                color: #fff;
+                }
 .nav4 li span {
-            width: 3%;
-            left: 0px;
-            top: -5px;
-            height: 85%;
-            background-color: #F1BEBE;
-            display: block;
-            position: absolute;
-            transition: all 0.8s;
-            z-index: -1;
-            transform: skewX(-20deg);
-            box-shadow: 1px 1px 1px #6a6a6a;
-            }
+                width: 3%;
+                left: 0px;
+                top: -5px;
+                height: 85%;
+                background-color: #F1BEBE;
+                display: block;
+                position: absolute;
+                transition: all 0.8s;
+                z-index: -1;
+                transform: skewX(-20deg);
+                box-shadow: 1px 1px 1px #6a6a6a;
+                }
 .nav4 li:nth-child(4) span {width: 2.5%;}
 .nav4 li:nth-child(4) {width: 170px;}
 .nav4 li:hover {
@@ -564,7 +606,7 @@ img {
 .nav4 li.on4 em {
                 color: #fff;
                 font-weight: bold;
-                }
+                } */
 
 /* 글자설정 */
 .bigBox {
@@ -590,9 +632,9 @@ img {
         font-weight: 300;
         }
 .bigBox p.on5 {
-            color: #C06363;
-            font-weight: bold;
-            }
+                color: #C06363;
+                font-weight: bold;
+                }
 .bigBox li.on5 {
                 color: #fff;
                 font-weight: bold;
@@ -600,14 +642,14 @@ img {
                 }
 .filmo_left div {margin-bottom: 20px;}
 .filmo_left ul li {
-                    color: #8a8a8a;
-                    border-left: 1px solid #5a5a5a;
-                    margin-left: 20px;
-                    padding-left: 15px;
-                    padding-bottom: 10px;
-                    padding-top: 10px;
-                    font-size: 16px;
-                    }
+                color: #8a8a8a;
+                border-left: 1px solid #5a5a5a;
+                margin-left: 20px;
+                padding-left: 15px;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                font-size: 16px;
+                }
 .filmo_left>div>p:hover {
                         cursor: pointer;
                         font-weight: bold;
@@ -622,23 +664,24 @@ img {
 
 /* 동영상 설정 */
 .filmo_right {
-            position: absolute;
-            left: 400px;
-            top: -50px;
-            }
-.video1 li.on6 {z-index: 10;}
+                position: absolute;
+                left: 400px;
+                top: -50px;
+                }
+.filmo_right ul li.on6 {z-index: 10;}
 .video1 ul li{position: absolute;}
 .video2 ul li{position: absolute;}
 .video3 ul li{position: absolute;}
 
 /* brand박스 설정 */
 .box4 {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.50);
-    overflow: hidden;
-    }
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.50);
+        overflow: hidden;
+        box-sizing: border-box;
+        }
 .title4 {
         position: absolute;
         top: 20px;
@@ -652,15 +695,15 @@ img {
         }
 
 /* 메뉴설정 */
-.nav5 {
-    position: absolute;
-    top: 3.5%;
-    right: 1%;
-    }
+/* .nav5 {
+        position: absolute;
+        top: 3.5%;
+        right: 1%;
+        }
 .nav5 ul {display: flex;}
-.nav5 li {
+.nav5 li { */
         /* background-color: aqua; */
-        width: 120px;
+        /* width: 120px;
         height: 35px;
         font-size: 16px;
         color: #fff;
@@ -669,23 +712,24 @@ img {
         margin-right: 10px;
         }
 .nav5 li em {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-weight: bold;
-            }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        }
 .nav5 li span {
-            width: 3%;
-            left: 0px;
-            top: -5px;
-            height: 85%;
-            background-color: rgba(0, 0, 0, 0.60);
-            display: block;
-            position: absolute;
-            transition: all 0.8s;
-            z-index: -1;
-            transform: skewX(-20deg);
-            box-shadow: 1px 1px 1px #6a6a6a;}
+                width: 3%;
+                left: 0px;
+                top: -5px;
+                height: 85%;
+                background-color: rgba(0, 0, 0, 0.60);
+                display: block;
+                position: absolute;
+                transition: all 0.8s;
+                z-index: -1;
+                transform: skewX(-20deg);
+                box-shadow: 1px 1px 1px #6a6a6a;
+                }
 .nav5 li:nth-child(4) span {width: 2.5%;}
 .nav5 li:nth-child(4) {width: 170px;}
 .nav5 li:hover {
@@ -698,32 +742,34 @@ img {
 .nav5 li.on7 em {
                 color: #fff;
                 font-weight: bold;
-                }
+                } */
 
 /* 사진설정 */
 .top_brand ul {display: flex;}
 .top_brand ul li {
                 margin-right: 20px;
                 margin-bottom: 20px;
+                border: 1px solid #000;
                 }
 .bottom_brand ul {display: flex;}
 .bottom_brand ul li {
-                    margin-right: 20px;
-                    margin-top: 20px;
-                    }
+                        margin-right: 20px;
+                        margin-top: 20px;
+                        border: 1px solid #000;
+                        }
 .brand {
         position: absolute;
         right: -520px;
         bottom: 156px;
         }
 .insta p a {
-            color: #fff;
-            font-size: 45px;
-            text-shadow: 1px 1px 1px #000;
-            position: absolute;
-            top: 480px;
-            left: 200px;
-            }
+                color: #fff;
+                font-size: 45px;
+                text-shadow: 1px 1px 1px #000;
+                position: absolute;
+                top: 480px;
+                left: 200px;
+                }
 .line1 {
         position: absolute;
         border: 1px solid #fff;
@@ -732,3 +778,7 @@ img {
         width: 535px;
         box-shadow: 1px 1px 1px #000;
         }
+.brand img {
+                width: 280px;
+                height: 280px;
+                }
