@@ -107,15 +107,16 @@ $(document).ready(function(){
                                 
 
                                                         if(sc>=sht*0 && sc<sht*1){
-                                                                                $('.nav2').fadeOut(0);
-                                                                                $('.nav2 li').removeClass('on2')
+                                                                                $('.n2').fadeOut(0);
+                                                                                $('.n2 li').removeClass('on2')
                                                                             
                                                         }
+
                                                         for(var a = 1; a<4; a++){
                                                             if(sc>=sht*(a+1) && sc<sht*(a+2)){
-                                                                                            $('.nav2').fadeIn(969);
-                                                                                            $('.nav2 li').removeClass('on2')
-                                                                                            $('.nav2 li') .eq(a).addClass('on2')
+                                                                                            $('.n2').fadeIn(969);
+                                                                                            $('.n2 li').removeClass('on2')
+                                                                                            $('.n2 li') .eq(a).addClass('on2')
                                                                                             }
                                                             }
                             })
@@ -126,17 +127,20 @@ $(document).ready(function(){
                                                         let s = $(this).index();
                                                         let sht = $('section').height();
                                                         $('html,body').stop().animate({scrollTop:(s)*sht},1200)
-                                                        $('.n2 li').removeClass('.on2')
-                                                        $(this).addClass('.on2')
+                                                        $('.n2 li').removeClass('on2')
+                                                        $(this).addClass('on2')
                                                         });
 
-                                $('.on2').click(function(){
-                                    let sht = $('section').height();
-                                    $('html,body').stop().animate({scrollTop:sht},1200);
-                                    $('.n2').fadeIn(1800);
-                                    $('.n2 li').removeClass('.on3')
-                                    $('.n2 li').eq(1).addClass('.on3')
-                                    })
+
+                                                    
+
+                                // $('.on2').click(function(){
+                                //     let sht = $('section').height();
+                                //     $('html,body').stop().animate({scrollTop:sht},1200);
+                                //     $('.n2').fadeIn(1800);
+                                //     $('.n2 li').removeClass('.on3')
+                                //     $('.n2 li').eq(1).addClass('.on3')
+                                //     })
 
                 
                             // n2 li를 클릭했을 때, span과 li의 색깔이 바뀌어라.
