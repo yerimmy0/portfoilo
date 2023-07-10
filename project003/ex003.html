@@ -73,12 +73,12 @@ $(window).scroll(function(){
     let bht = $('.box1').height()
 
 let lsc = (sNum-bht);
-    $('h1').text((sNum-bht)/5);
+    // $('h1').text((sNum-bht)/5);
 
 if(sc>=bht){
 
 $('.box2').addClass('fix');
-$('.box2 p').css({'left':200-lsc})
+$('.box2 p').css({'left':500-lsc})
 
 }else {
 $('.box2').removeClass('fix')  
@@ -92,7 +92,7 @@ $('.box2').removeClass('fix')
 <body>
     <h1>00</h1>
     <div class="box1">포트폴리오</div>
-    <div class="box2">
+    <div class="box2 fix">
         <p></p>
     </div>
     

@@ -149,7 +149,7 @@ img {
         width: 120px;
         height: 35px;
         font-size: 16px;
-        color: #1a1a1a;
+        color: #585858;
         cursor: pointer;
         position: relative;
         margin-right: 10px;
@@ -173,19 +173,23 @@ img {
                 transform: skewX(-20deg);
                 box-shadow: 1px 1px 1px #6a6a6a;
                 }
-.n2 li:nth-child(4) span {width: 2.5%;}
-.n2 li:nth-child(4) {width: 170px;}
-.n2 li:hover {
+.n2 ul li:nth-child(4) span {width: 2.5%;}
+.n2 ul li:nth-child(4) {width: 170px;}
+.n2 ul li:hover {
                 font-weight: bold;
                 color: #fff;
                 }
-.n2 li:hover span {width: 100%;}
+.n2 ul li:hover span {width: 100%;}
 .fi em:hover span {width: 100%;}
-.n2 li.on2 span {width: 100%;}
-.n2 li.on2 em {
+.n2 ul li.on2 span {width: 100%;}
+.n2 ul li.on2 em {
                 color: #fff;
                 font-weight: bold;
                 }
+.n2 ul li.on2{
+                color: #fff;
+                font-weight: bold;
+}
 
 /* 프로필 사진 설정 */
 .box1 {
@@ -342,55 +346,6 @@ img {
         text-shadow: 1.5px 1.5px 1px rgba(120, 120, 120, 0.6);
         }
 
-/* 메뉴설정 */
-/* .nav3 {
-        position: absolute;
-        top: 3.5%;
-        right: 1%;
-        }
-.nav3 ul {display: flex;}
-.nav3 li {
-        /* background-color: aqua; */
-        /* width: 120px;
-        height: 35px;
-        font-size: 16px;
-        color: #1a1a1a;
-        cursor: pointer;
-        position: relative;
-        margin-right: 10px;
-        }
-.nav3 li em {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-weight: bold;
-                }
-.nav3 li span {
-                width: 3%;
-                left: 0px;
-                top: -5px;
-                height: 85%;
-                background-color: #8f8cae;
-                display: block;
-                position: absolute;
-                transition: all 0.8s;
-                z-index: -1;
-                transform: skewX(-20deg);
-                box-shadow: 1px 1px 1px #6a6a6a;
-                }
-.nav3 li:nth-child(4) span {width: 2.5%;}
-.nav3 li:nth-child(4) {width: 170px;}
-.nav3 li:hover {
-                font-weight: bold;
-                color: #fff;
-                }
-.nav3 li:hover span {width: 100%;}
-.fi3 em:hover span {width: 100%;}
-.nav3 li.on3 span {width: 100%;}
-.nav3 li.on3 em {
-                color: #fff;
-                font-weight: bold;
-                }  */
 
 /* actor이미지 설정 */
 .pho1 {
@@ -557,56 +512,6 @@ img {
         text-shadow: 1.5px 1.5px 1px rgba(221, 220, 220, 0.6);
         }
 
-/* 메뉴설정 */
-/* .nav4 {
-        position: absolute;
-        top: 3.5%;
-        right: 1%;
-        }
-.nav4 ul {display: flex;}
-.nav4 li { */
-        /* background-color: aqua; */
-        /* width: 120px;
-        height: 35px;
-        font-size: 16px;
-        color: #1a1a1a;
-        cursor: pointer;
-        position: relative;
-        margin-right: 10px;
-        }
-.nav4 li em {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-weight: bold;
-                color: #fff;
-                }
-.nav4 li span {
-                width: 3%;
-                left: 0px;
-                top: -5px;
-                height: 85%;
-                background-color: #F1BEBE;
-                display: block;
-                position: absolute;
-                transition: all 0.8s;
-                z-index: -1;
-                transform: skewX(-20deg);
-                box-shadow: 1px 1px 1px #6a6a6a;
-                }
-.nav4 li:nth-child(4) span {width: 2.5%;}
-.nav4 li:nth-child(4) {width: 170px;}
-.nav4 li:hover {
-                font-weight: bold;
-                color: #fff;
-                }
-.nav4 li:hover span {width: 100%;}
-.fi4 em:hover span {width: 100%;}
-.nav4 li.on4 span {width: 100%;}
-.nav4 li.on4 em {
-                color: #fff;
-                font-weight: bold;
-                } */
 
 /* 글자설정 */
 .bigBox {
@@ -640,6 +545,7 @@ img {
                 font-weight: bold;
                 font-size: 18px;
                 }
+.fil1 ul li{z-index: 1;}
 .filmo_left div {margin-bottom: 20px;}
 .filmo_left ul li {
                 color: #8a8a8a;
@@ -664,14 +570,43 @@ img {
 
 /* 동영상 설정 */
 .filmo_right {
+
                 position: absolute;
                 left: 400px;
                 top: -50px;
                 }
 .filmo_right ul li.on6 {z-index: 10;}
-.video1 ul li{position: absolute;}
-.video2 ul li{position: absolute;}
-.video3 ul li{position: absolute;}
+.video1 ul li{z-index: 1;}
+.video1{
+        position: absolute;
+        width: 1300px;
+        height: 730px;
+        }
+.video1 ul li{
+                position: absolute;
+                width: 1300px;
+                height: 730px;
+                }
+.video2{
+        position: absolute;
+        width: 1300px;
+        height: 730px;
+        }
+.video2 ul li{
+                position: absolute;
+                width: 1300px;
+                height: 730px;
+                }
+.video3{
+        position: absolute;
+        width: 1300px;
+        height: 730px;
+        }
+.video3 ul li{
+                position: absolute;
+                width: 1300px;
+                height: 730px;
+                }
 
 /* brand박스 설정 */
 .box4 {
@@ -694,90 +629,51 @@ img {
         text-shadow: 1.5px 1.5px 1px rgba(0, 0, 0, 1);
         }
 
-/* 메뉴설정 */
-/* .nav5 {
-        position: absolute;
-        top: 3.5%;
-        right: 1%;
-        }
-.nav5 ul {display: flex;}
-.nav5 li { */
-        /* background-color: aqua; */
-        /* width: 120px;
-        height: 35px;
-        font-size: 16px;
-        color: #fff;
-        cursor: pointer;
-        position: relative;
-        margin-right: 10px;
-        }
-.nav5 li em {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-weight: bold;
-        }
-.nav5 li span {
-                width: 3%;
-                left: 0px;
-                top: -5px;
-                height: 85%;
-                background-color: rgba(0, 0, 0, 0.60);
-                display: block;
-                position: absolute;
-                transition: all 0.8s;
-                z-index: -1;
-                transform: skewX(-20deg);
-                box-shadow: 1px 1px 1px #6a6a6a;
-                }
-.nav5 li:nth-child(4) span {width: 2.5%;}
-.nav5 li:nth-child(4) {width: 170px;}
-.nav5 li:hover {
-                font-weight: bold;
-                color: #fff;
-                }
-.nav5 li:hover span {width: 100%;}
-.fi5 em:hover span {width: 100%;}
-.nav5 li.on7 span {width: 100%;}
-.nav5 li.on7 em {
-                color: #fff;
-                font-weight: bold;
-                } */
 
 /* 사진설정 */
 .top_brand ul {display: flex;}
 .top_brand ul li {
-                margin-right: 20px;
-                margin-bottom: 20px;
+                margin-right: 35px;
+                margin-bottom: 17.5px;
                 border: 1px solid #000;
                 }
+.top_brand ul li img:hover{transition: all 0.2s linear;}
+.top_brand ul li:hover img {transform: scale(1.5);}
 .bottom_brand ul {display: flex;}
 .bottom_brand ul li {
-                        margin-right: 20px;
-                        margin-top: 20px;
+                        margin-right: 35px;
+                        margin-top: 17.5px;
                         border: 1px solid #000;
                         }
-.brand {
+.bottom_brand ul li img:hover{transition: all 0.2s linear;}
+.bottom_brand ul li:hover img {transform: scale(1.5);}
+.box4>.brand {
         position: absolute;
-        right: -520px;
-        bottom: 156px;
+        left: 1230px;
+        bottom: 157px;
+        width: 2500px;
+        height: 602px;
         }
+.box4.fix{
+        left: 0;
+        top: 0;
+}
 .insta p a {
                 color: #fff;
                 font-size: 45px;
                 text-shadow: 1px 1px 1px #000;
                 position: absolute;
-                top: 480px;
-                left: 200px;
+                top: 477px;
+                left: 110px;
                 }
-.line1 {
+/* .box4>.line1 {
         position: absolute;
         border: 1px solid #fff;
         top: 514px;
         left: 680px;
         width: 535px;
         box-shadow: 1px 1px 1px #000;
-        }
+        } */
 .brand img {
                 width: 280px;
                 height: 280px;
