@@ -5,14 +5,551 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>정예림포트폴리오</title>
+    <!-- 그리드가이드연결 -->
+    <!-- <link rel="stylesheet" href="css/grid-guide.css"> -->
+    <!-- 외부스타일시트연결 -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 제이쿼리CDN -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    <!-- 외부스크립트연결 -->
+    <script src="js/javascript.js"></script>
 </head>
 <body>
+    <section>
+        <article class="box1">
+            <div class="cir_img">
+                <img src="img/circle.png" alt="">
+            </div>
+            <div class="wel">
+                <p>WELCOME TO MY PORTFOILO</p>
+                <span>HELLO, I am JEONG YERIM</span>
+            </div>
+            <div class="img_box1">
+                <img src="img/mousewheel.png" alt="" class="mouse" id="mou">
+            </div>
+            <div class="des">
+                <p>DESIGNER</p>
+            </div>
+        </article>
+
+        <article class="box2">
+            <nav>
+                <ul>
+                    <li class="on ho">
+                        <a href="#">
+                            <span>HOME</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>PROFILE</span>
+                        </a>
+                    </li>
+                    <li></li>
+                    <li class="pub">
+                        <a href="#">
+                            <span>PUBLISHING </span>
+                        </a>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li>
+                        <a href="#">
+                            <span>DESIGN</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="side">
+                <div class="boxx1">
+                    <div class="pho">
+                        <img src="img/profile5.png" alt="" class="pr4">
+                    </div>
+                    <div class="me">
+                        <p class="about">ABOUT ME</p>
+                        <div class="m1">
+                            <p class="fm">NAME</p>
+                            <p>정예림 / JEONG YERIM</p>
+                        </div>
+                        <div class="m2">
+                            <p class="fm">BIRTH</p>
+                            <p>1999년 <em>(만 24살)</em></p>
+                        </div>
+                        <div class="m3">
+                            <p class="fm">EMAIL</p>
+                            <p>yerimmy0512@naver.com</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="boxx2">
+                    <div class="education">
+                        <div>
+                            <p class="fi_name">EDUCATION</p>
+                            <div class="line"></div>
+                        </div>
+                        <div>
+                            <div class="fi1">
+                                <p class="cal">2018</p>
+                                <p>대전대학교 아동교육상담학과 입학</p>
+                            </div>
+                            <div class="fi2">
+                                <p class="cal">2022</p>
+                                <p>대전대학교 아동교육상담학과 졸업</p>
+                            </div>
+                            <div class="fi3">
+                                <p class="cal">2023</p>
+                                <p>
+                                    그린컴퓨터아트학원 NCS 스마트 혼합<br>
+                                    <em>-UI/UX 반응형 웹디자인&웹퍼블리셔(코딩) 개발자 수료</em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience">
+                        <div>
+                            <p class="fi_name">EXPERIENCE</p>
+                            <div class="line"></div>
+                        </div>
+                        <div>
+                            <div class="e1">
+                                <p class="cal2">2018 - 2021</p>
+                                <p>파리바게트 근무</p>
+                            </div>
+                            <div class="e2">
+                                <p class="cal2">2022 - 2023</p>
+                                <p>세종 한뜰숲 어린이집 보육교사</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hobby">
+                        <div>
+                            <p class="fi_name">HOBBY</p>
+                            <div class="line"></div>
+                        </div>
+                        <div class="hob">
+                            <div class="ho1">
+                                <span>
+                                    <img src="img/hobby1.png" alt="">
+                                </span>
+                                <p>exercise</p>
+                            </div>
+                            <div class="ho2">
+                                <span>
+                                    <img src="img/hobby2.png" alt="">
+                                </span>
+                                <p>movie</p>
+                            </div>
+                            <div class="ho3">
+                                <span>
+                                    <img src="img/hobby3.png" alt="">
+                                </span>
+                                <p>listen to music</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="boxx3">
+                    <div class="skill">
+                        <div>
+                            <p class="fi_name">SKILL</p>
+                            <div class="line"></div>
+                        </div>
+                        <div class="sk">
+                            <div class="htm">
+                                <p class="nam">HTML</p>
+                                <img src="img/skill_html.png" alt="">
+                                <p class="perc">95%</p>
+                            </div>
+                            <div class="cs">
+                                <p class="nam">CSS</p>
+                                <img src="img/skill_css.png" alt="">
+                                <p class="perc">80%</p>
+                            </div>
+                            <div class="java">
+                                <p class="nam">JAVASCRIPT</p>
+                                <img src="img/skill_java.png" alt="">
+                                <p class="perc">70%</p>
+                            </div>
+                            <div class="fig">
+                                <p class="nam">FIGMA</p>
+                                <img src="img/skill_figma.png" alt="">
+                                <p class="perc">95%</p>
+                            </div>
+                            <div class="phot">
+                                <p class="nam">ADOBE PHOTOSHOP</p>
+                                <img src="img/skill_photo.png" alt="">
+                                <p class="perc">85%</p>
+                            </div>
+                            <div class="il">
+                                <p class="nam">ADOBE ILLUSTRATION</p>
+                                <img src="img/skill_illust.png" alt="">
+                                <p class="perc">80%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="personality">
+                        <div>
+                            <p class="fi_name">PERSONALITY</p>
+                            <div class="line"></div>
+                            <img src="img/personality.png" alt="" class="per_img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+
+
+        <article class="box3">
+            <div class="bx3">
+                <div class="b3_1" id="se">
+                    <div class="b3_img1">
+                        <img src="img/layer1.png" alt="">
+                        <div class="b3_img2">
+                            <img src="img/project1.png" alt="">
+                        </div>
+                        <div class="le">
+                            <div class="num1">
+                                <p>1</p>
+                            </div>
+                            <div class="letter1">
+                                <p>SEOULFOREST</p>
+                                <em>RENEWAL PROJECT</em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="b3_2" id="se2">
+                    <div class="b3_img3">
+                        <img src="img/layer2.png" alt="">
+                        <div class="b3_img4">
+                            <img src="img/project2.png" alt="">
+                        </div>
+                        <div class="le2">
+                            <div class="num2">
+                                <p>2</p>
+                            </div>
+                            <div class="letter2">
+                                <p>읍천리382</p>
+                                <em>RENEWAL PROJECT</em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="b3_3" id="se3">
+                    <div class="b3_img5">
+                        <img src="img/layer3.png" alt="">
+                        <div class="b3_img6">
+                            <img src="img/project3.png" alt="">
+                        </div>
+                        <div class="le6">
+                            <div class="num3">
+                                <p>3</p>
+                            </div>
+                            <div class="letter3">
+                                <p>ROWOON</p>
+                                <em>PANPAGE</em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="box4" id="forest">
+            <div class="fors">
+                <div class="lef">
+                    <div class="b3_6">
+                        <div class="b3_img11">
+                            <img src="img/layer1.png" alt="">
+                        </div>
+                        <div class="b3_img12">
+                            <img src="img/project1.png" alt="">
+                        </div>
+                        <div class="le3">
+                            <div class="num6">
+                                <p>1</p>
+                            </div>
+                            <div class="letter26">
+                                <p>SEOULFOREST</p>
+                                <em>RENEWAL PROJECT</em>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rig">
+                    <div class="let1">
+                        <p class="letter4">서울숲</p>
+                        <div class="let2">
+                            <p class="letter5"># 기존 웹사이트 리뉴얼</p>
+                            <p># PC</p>
+                        </div>
+                        <p># 조성부터 프로그램 운영까지 시민의 참여로 이루어진 최초의 공원</p>
+                        <div class="let3">
+                            <p class="letter6"># FIGMA</p>
+                            <p class="letter7"># PHOTOSHOP</p>
+                            <p class="letter8"># HTML</p>
+                            <p># CSS</p>
+                        </div>
+                        <div class="let4">
+                            <div>
+                                <p>
+                                    <span>
+                                        <a href="seoulconcept.html" target="_blank">CONCEPT VIEW</a>
+                                    </span>
+                                </p>
+                            </div>
+                            <div>
+                                <p>
+                                    <span>
+                                        <a href="project001/index.html" target="_blank">WEB SITE</a>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+        <article class="box6" id="chun">
+            <div class="fors3">
+                <div class="lef3">
+                    <div class="b3_4">
+                        <div  class="b3_img7">
+                            <img src="img/layer2.png" alt="">
+                        </div>
+                        <div class="b3_img8">
+                            <img src="img/project2.png" alt="">
+                        </div>
+                        <div class="le4">
+                            <div class="num4">
+                                <p>2</p>
+                            </div>
+                            <div class="letter10">
+                                <p>읍천리382</p>
+                                <em>RENEWAL PROJECT</em>
+                            </div>
+                
+                        </div>
+                    </div>
+                </div>
+                <div class="rig3">
+                    <div class="let5">
+                        <p class="letter11">읍천리382</p>
+                        <div class="let6">
+                            <p class="letter12"># 기존 웹사이트 리뉴얼</p>
+                            <p># PC</p>
+                        </div>
+                        <p># 도심 속 시골농촌 카페</p>
+                        <div class="let10">
+                            <p class="letter13"># FIGMA</p>
+                            <p class="letter14"># PHOTOSHOP</p>
+                            <p class="letter15"># HTML</p>
+                            <p class="letter16"># CSS</p>
+                            <p># JAVASCRIPT </p>
+                        </div>
+                        <div class="let8">
+                            <div>
+                                <p>
+                                    <span>
+                                        <a href="eupconcept.html" target="_blank">CONCEPT VIEW</a>
+                                    </span>
+                                </p>
+                            </div>
+                            <div>
+                                <p>
+                                    <span>
+                                        <a href="project002/index.html" target="_blank">WEB SITE</a>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+        <article class="box8" id="rowo">
+            <div class="fors4">
+                <div class="lef4">
+                    <div class="b3_5">
+                        <div class="b3_img9">
+                            <img src="img/layer3.png" alt="">
+                        </div>
+                        <div class="b3_img10">
+                            <img src="img/project3.png" alt="">
+                        </div>
+                        <div class="le5">
+                            <div class="num5">
+                                <p>3</p>
+                            </div>
+                            <div class="letter18">
+                                <p>ROWOON</p>
+                                <em>PANPAGE</em>
+                            </div>
+                
+                        </div>
+                    </div>
+                </div>
+                <div class="rig4">
+                    <div class="let11">
+                        <p class="letter19">로운</p>
+                        <div class="let12">
+                            <p class="letter20"># 펜페이지 제작</p>
+                            <p># PC</p>
+                        </div>
+                        <p># ‘얼굴 천재’라는 별명을 가진 가수 겸 배우</p>
+                        <div class="let13">
+                            <p class="letter21"># FIGMA</p>
+                            <p class="letter22"># PHOTOSHOP</p>
+                            <p class="letter23"># HTML</p>
+                            <p class="letter24"># CSS</p>
+                            <p># JAVASCRIPT </p>
+                        </div>
+                        <div class="let14">
+                            <div>
+                                <p>
+                                    <span>
+                                        <a href="rowoonconcept.html" target="_blank">CONCEPT VIEW</a>
+                                    </span>
+                                </p>
+                            </div>
+                            <div>
+                                <p>
+                                    <span><a href="project003/index.html" target="_blank">WEB SITE</a></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+        <div class="pop1">
+            <div class="back">
+                <div class="lef7">
+                    <div class="sofr">
+                        <p>SEOULFOREST</p>
+                    </div>
+                </div>
+                <div class="rig7">
+                    <p class="ren">RENEWAL</p>
+                    <div class="list1">
+                        <ul>
+                            <li># 서울</li>
+                            <li># 성수동</li>
+                            <li># 숲</li>
+                            <li># 공원</li>
+                        </ul>
+                        <ul>
+                            <li># 휴식</li>
+                            <li># 사슴</li>
+                            <li># 테마공원</li>
+                            <li># 한강</li>
+                        </ul>
+                    </div>
+                    <div class="iB1">
+                        <img src="img/pop_se1.png" alt="" class="imgBox1">
+                        <img src="img/pop_se2.png" alt="" class="imgBox2">
+                        <img src="img/pop_se3.png" alt="" class="imgBox3">
+                    </div>
+                    <span class="btn1">X</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="pop2">
+            <div class="back2">
+                <div class="lef8">
+                    <div class="sofr2">
+                        <p>EUPCHEONRI</p>
+                    </div>
+                </div>
+                <div class="rig8">
+                    <p class="ren2">RENEWAL</p>
+                    <div class="list2">
+                        <ul>
+                            <li># 읍천리</li>
+                            <li># 시골농촌</li>
+                            <li># 카페</li>
+                            <li># 음료</li>
+                        </ul>
+                        <ul>
+                            <li># 디저트</li>
+                            <li># MD상품</li>
+                            <li># 케이터링</li>
+                            <li># 가맹점</li>
+                        </ul>
+                    </div>
+                    <div class="iB2">
+                        <img src="img/pop_eup1.png" alt="" class="imgBox4">
+                        <img src="img/pop_eup2.png" alt="" class="imgBox5">
+                        <img src="img/pop_eup3.png" alt="" class="imgBox6">
+                    </div>
+                    <span class="btn2">X</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="pop3">
+            <div class="back3">
+                <div class="lef9">
+                    <div class="sofr3">
+                        <p>ROWOON</p>
+                    </div>
+                </div>
+                <div class="rig9">
+                    <p class="ren3">PANPAGE</p>
+                    <div class="list3">
+                        <ul>
+                            <li># 로운</li>
+                            <li># 김석우</li>
+                            <li># 가수</li>
+                            <li># SF9</li>
+                        </ul>
+                        <ul>
+                            <li># 배우</li>
+                            <li># 드라마</li>
+                            <li># 영화</li>
+                            <li># 뮤직비디오</li>
+                        </ul>
+                    </div>
+                    <div class="iB3">
+                        <img src="img/pop_ro1.png" alt="" class="imgBox7">
+                        <img src="img/pop_ro2.png" alt="" class="imgBox8">
+                    </div>
+                    <span class="btn3">X</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
     
-    <h1>정예림포트폴리오</h1>
+
+
+
+
+    <!-- <h1>정예림포트폴리오</h1>
  <ul>
     <li><a href="project001/index.html" target="_blank">프로젝트001-서울숲</a></li>
     <li><a href="project002/index.html" target="_blank">프로젝트002-제품형웹프로젝트</a></li>
     <li><a href="project003/index.html" target="_blank">프로젝트003-인물형웹프로젝트</a></li>
- </ul>
+ </ul> -->
 </body>
 </html>
