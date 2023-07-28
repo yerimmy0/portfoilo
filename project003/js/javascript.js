@@ -1,7 +1,7 @@
 $(document).ready(function(){
                             let ht = $(window).height();
                             $('section').height(ht);
-                            // console.log(ht);
+                        
                             $(window).resize(function(){
                                                         let he = $(window).height();
                                                         $('section').height(ht)
@@ -10,13 +10,10 @@ $(document).ready(function(){
                             // nav li를 클릭할 때마다 scrollTop의 위치를 바꾸어라.
                             $(window).scroll(function(){
                                                         let sc = $(window).scrollTop()
-                                                        // $('h1').text(sc)
+                                                    
                                                         let ht = $(window).height();
 
-                                                        // if(sc>=ht*0 && sc<ht*1){
-                                                        //     $('nav li span').fadeIn(600);
-                                                        //     $('nav li').removeClass('on')
-                                                        // }
+                                                        
 
                                                         // 반복문을 활용한 축약설정
                                                         for(var a = 0; a<5; a++){
@@ -30,7 +27,7 @@ $(document).ready(function(){
                             $('nav li').click(function(e){
                                                         e.preventDefault()
                                                         let i = $(this).index()
-                                                        // console.log(i);
+                                                        
                                                         let ht = $(window).height();
 
                                                         $('html,body').stop().animate({scrollTop: ht*i},1400);
@@ -39,25 +36,24 @@ $(document).ready(function(){
                                                         });
 
                             // section위에서 마우스를 올릴 때, 내릴 때 이벤트가 발생한다.
-                            $('article').mousewheel(function(event,delta){
-                                                                        if(delta>0){
-                                                                                    let pre = $(this).prev().offset().top
-                                                                                    $('html,body').stop().animate({scrollTop:pre},1000,'swing')
-                                                                                    }
-                                                                        else if(delta<0){
-                                                                                        let next = $(this).next().offset().top
-                                                                                        // console.log(next)
-                                                                                        $('html,body').stop().animate({scrollTop:next},1000,'swing')
-                                                                                        }
-                                                                        })
+                            // $('article').mousewheel(function(event,delta){
+                            //                                             if(delta>0){
+                            //                                                         let pre = $(this).prev().offset().top
+                            //                                                         $('html,body').stop().animate({scrollTop:pre},1000,'swing')
+                            //                                                         }
+                            //                                             else if(delta<0){
+                            //                                                             let next = $(this).next().offset().top
+                                                                                        
+                            //                                                             $('html,body').stop().animate({scrollTop:next},1000,'swing')
+                            //                                                             }
+                            //                                             })
 
-                            $('article').mousemove(function(e){
-                                                            let x = e.pageX;
-                                                            let y = e.pageY;
-                                                            // console.log(x,y)
+                            // $('article').mousemove(function(e){
+                            //                                 let x = e.pageX;
+                            //                                 let y = e.pageY;
 
-                                                            $(this).find('.boxA').css({'bottom': 20+(y/10), 'right': 20+(x/10)})
-                                                            })
+                            //                                 $(this).find('.boxA').css({'bottom': 20+(y/10), 'right': 20+(x/10)})
+                            //                                 })
 
                             // main버튼을 눌렀을 때 main화면에 있는 버튼이 main을 가리켜라.
                             // $('.ma').click(function(){

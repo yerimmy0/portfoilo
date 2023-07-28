@@ -156,8 +156,8 @@ header {
         font-size: 20px;
         }
 .box1 .hero .dr .box1-2 {
-                        left: 3%;
-                        bottom: 3%;
+                        left: 7.5%;
+                        bottom: 0%;
                         }
 .box1-2 img     {
                 width: 630px;
@@ -186,8 +186,8 @@ header {
         font-size: 20px;
         }
 .box1 .hero .dr .box1-4 {
-                        right: 3%;
-                        bottom: 3%;
+                        right: 7.5%;
+                        bottom: 0%;
                         z-index: 10;
                         }
 .box1-4 img     {
