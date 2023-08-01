@@ -90,7 +90,7 @@ $(document).ready(function(){
                                 if(d<6) d++;
                                 // console.log(d)
 
-                            $('.daily ul').stop().animate({'right': -(ad+20)*d},1000)
+                            $('.daily ul').stop().animate({'right': -(ad+25)*d},1000)
                             })
 
 
@@ -100,10 +100,10 @@ $(document).ready(function(){
                             // console.log(ed)
 
                             $('.do').click(function(){
-                                if(k<4) k++;
+                                if(k<5) k++;
                                 // console.log(k)
 
-                            $('.singer ul').stop().animate({'top': -(ed-220)*k},1000)
+                            $('.singer ul').stop().animate({'top': -(ed+5)*k},1000)
                             })
 
 
@@ -154,14 +154,14 @@ $(document).ready(function(){
                                 let lsc = (sNum-bht);
                                 // $('h1').text((sNum-bht)/5);
                             
-                            if(sc>=bht){
+                            // if(sc>=bht){
                             
-                            $('.box4').addClass('fix');
-                            $('.box4 div').stop().animate({'left':3510-lsc},1300)
+                            // $('.box4').addClass('fix');
+                            // $('.box4 div').stop().animate({'left':50-lsc},1300)
                             
-                            }else {
-                            $('.box4').removeClass('fix')  
-                            }
+                            // }else {
+                            // $('.box4').removeClass('fix')  
+                            // }
                             
                             })
 
