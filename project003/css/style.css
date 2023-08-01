@@ -315,7 +315,7 @@ img {
 .ex_p2 {
         bottom: 280px;
         font-size: 20px;
-        line-height: 33px;
+        line-height: 35px;
         letter-spacing: 1px;
         font-family: 'Istok Web', sans-serif;
         left: 10px;
@@ -1073,9 +1073,9 @@ img {
 .ex_p2 {
         overflow: hidden;
         position: absolute;
-        bottom: 30%;
+        bottom: 34%;
         font-size: 12px;
-        line-height: 25px;
+        line-height: 23px;
         font-family: 'Istok Web', sans-serif;
         left: 4%;
         width: 56%;
@@ -2627,6 +2627,8 @@ img {
                 position: absolute;
                 left: 0;
                 top: 7%;
+                height: 45%;
+                overflow: hidden;
         }
         .en_name{
                 font-family: 'Jacques Francois', serif;
@@ -3143,8 +3145,11 @@ img {
                 text-shadow: 1.5px 1.5px 1px rgba(0, 0, 0, 1);
                 }
         /* 글씨설정 */
-.insta{margin-bottom: 1%;}
+.insta{
+        display: none;
+        margin-bottom: 1%;}
 .insta a{
+        display: none;
         color: #fff;
         font-size: 30px;
         text-shadow: 1px 1px 1px #000;
