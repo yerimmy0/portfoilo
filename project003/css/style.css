@@ -151,7 +151,7 @@ img {
 .n2 ul {display: flex;}
 .n2 li {
         /* background-color: aqua; */
-        width: 120px;
+        width: 67px;
         height: 35px;
         font-size: 16px;
         color: #585858;
@@ -179,7 +179,7 @@ img {
                 box-shadow: 1px 1px 1px #6a6a6a;
                 }
 .n2 ul li:nth-child(4) span {width: 2.5%;}
-.n2 ul li:nth-child(4) {width: 170px;}
+.n2 ul li:nth-child(4) {width: 125px;}
 .n2 ul li:hover {
                 font-weight: bold;
                 color: #fff;
@@ -216,7 +216,7 @@ img {
         display: flex;
         }
 .profile_left{height: 100%;
-        width: 40%;
+        width: 50%;
         overflow: hidden;
 }
 .roro{
@@ -243,10 +243,11 @@ img {
 /* 프로필 오른쪽 글씨 설정 */
 .profile_right {
                 position: relative;
-                width: 60%;
+                width: 50%;
                 height: 100%;
-                top: 110px;
+                margin-top:7%;
                 }
+                .name1{height: 25%;}
 .en_name{
         font-family: 'Jacques Francois', serif;
         font-size: 80px;
@@ -277,22 +278,21 @@ img {
         margin-left: 50px;
         }
 .ex1{
-        position: absolute;
         display: flex;
         justify-content: space-around;
-        top: 210px;
+        top: 5%;
         text-align: center;
         align-items: top;
         height: 30%;
         width: 100%;
 }
 .ex_p {
-        font-size: 22px;
+        font-size: 20px;
         letter-spacing: 1px;
         line-height: 40px;
         font-family: 'Istok Web', sans-serif;
         text-align: end;
-        margin-top: 20px;
+        margin-right: 3%;
         }
 .ex_img {
         margin-left: 70px;
@@ -307,18 +307,16 @@ img {
                 justify-content: space-around;
                 text-align: left;
                 align-items: top;
-                margin-left: 0px;
-                bottom: -215px;
-                padding-top: 50px;
+                bottom: 0;
         }
 
 .ex_p2 {
         bottom: 280px;
-        font-size: 20px;
-        line-height: 35px;
+        font-size: 18px;
+        line-height: 30px;
         letter-spacing: 1px;
         font-family: 'Istok Web', sans-serif;
-        left: 10px;
+        margin-left: 4%;
         width: 100%;
         margin-right: 0px;
         }
@@ -330,15 +328,14 @@ img {
 .ex_img2 {
         width: 198px;
         height: 239px;
-        top: 20px;
-        margin-top: -50px;
+        margin-top: 10%;
         }
 .ex3 {
         position: absolute;
-        right: 15px;
-        bottom: 135px;
+        left: -97%;
+        bottom: 17%;
         width: 95%;
-        height: 155px;
+        height: 18%;
         border-radius: 10px;
         background: rgba(186, 184, 208, 0.60);
         }
@@ -350,11 +347,12 @@ img {
         justify-content: center;
         align-items: center;
         border-bottom: 1px solid #fff;
-        margin-top: 10px;
-        padding-bottom: 10px;
-        width: 90%;
-        padding-left: 42px;
-        margin-left: 30px;
+        margin-top: 1%;
+        padding-bottom: 2%;
+        width: 95%;
+        padding-left: -3%;
+        padding-right: -3%;
+        margin-left: 3%;
         }
 .ex3>div {
         display: flex;
@@ -1010,6 +1008,12 @@ img {
         width: 45%;
         height: 100%;
 }
+.name1{
+        left: 0;
+        margin-top: 7%;
+        height: 18%;
+
+}
 .en_name{
         font-family: 'Jacques Francois', serif;
         font-size: 50px;
@@ -1040,98 +1044,98 @@ img {
         font-size: 16px;
         margin-left: 9%;
         }
-.ex1{
-        width: 100%;
-        right: 3.5%;
-        margin-top: -13%;
-}
-.ex_p {
-        position: absolute;
-        right: 2%;
-        margin-top: -10%;
-        width: 45%;
-        font-size: 12px;
-        letter-spacing: 1px;
-        line-height: 25px;
-        font-family: 'Istok Web', sans-serif;
-        text-align: end;
+        .ex1{
+                display: flex;
+                justify-content: space-around;
+                top: 0%;
+                text-align: center;
+                align-items: top;
+                height: 34%;
+                width: 100%;
         }
-
-.ex_img {
-        position: absolute;
-        left: -10%;
-        top: -25%;
-        width: 74px;
-        height: 124px;
-        }
-.ex2{
-        overflow: hidden;
-        height: 45%;
-        width: 99%;
-}
-
-.ex_p2 {
-        overflow: hidden;
-        position: absolute;
-        bottom: 34%;
-        font-size: 12px;
-        line-height: 23px;
-        font-family: 'Istok Web', sans-serif;
-        left: 4%;
-        width: 56%;
-        height: 57%;
-        }
-.ex_p3{
-                margin-left: 60%;
-                margin-top: 20%;
-        }
-.ex_p2 em {
-        color: #a39df2;
-        font-style: normal;
-        font-weight: bold;
-        }
-.ex_img2 {
-        width: 100%;
-        height: 209px;
-        }
-.ex3 {
-        position: absolute;
-        right: 2%;
-        bottom: 15%;
-        width: 96.5%;
-        height: 15%;
-        border-radius: 10px;
-        background: rgba(186, 184, 208, 0.60);
-        }
-.ex3>p {
+        .ex_p {
+                font-size: 16px;
+                letter-spacing: 1px;
+                line-height: 40px;
+                font-family: 'Istok Web', sans-serif;
+                text-align: end;
+                margin-right: 3%;
+                }
+        .ex_img {
+                margin-left:5%;
+                width: 224px;
+                height: 294px;
+                }
+        .ex2{
+                width: 100%;
+                height: 35%;
+                        position: relative;
+                        display: flex;
+                        justify-content: space-around;
+                        text-align: left;
+                        align-items: top;
+                        bottom: 0;
+                }
+        
+        .ex_p2 {
+                bottom: 280px;
+                font-size: 13px;
+                line-height: 30px;
+                letter-spacing: 1px;
+                font-family: 'Istok Web', sans-serif;
+                margin-left: 4%;
+                width: 100%;
+                margin-right: 0px;
+                }
+        .ex_p2 em {
+                color: #a39df2;
+                font-style: normal;
+                font-weight: bold;
+                }
+        .ex_img2 {
+                width: 178px;
+                height: 219px;
+                margin-top: 10%;
+                }
+        .ex3 {
+                position: absolute;
+                left: -116%;
+                bottom: 12%;
+                width: 110%;
+                height: 155px;
+                border-radius: 10px;
+                background: rgba(186, 184, 208, 0.60);
+                }
+        .ex3>p {
                 font-family: 'Katibeh', cursive;
-                font-size: 40px;
+                font-size: 45px;
                 color: #fff;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 border-bottom: 1px solid #fff;
-                margin-top: 1%;
-                padding-bottom: 3%;
+                margin-top: 10px;
+                padding-bottom: 10px;
                 width: 80%;
-                margin-left: 3%;
+                padding-left: 42px;
+                margin-left: 30px;
                 }
-.ex3>div {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin-top: 5%;
-        }
-.ex3>div>a {
-                color: #fff;
-                font-family: 'Istok Web', sans-serif;
-                font-size: 20px;
+        .ex3>div {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-top: 25px;
                 }
-.ex3>div>a:hover {
-                font-weight: bold;
-                color: #0E1051;
-                cursor: pointer;
-                }
+        .ex3>div>a {
+                        color: #fff;
+                        font-family: 'Istok Web', sans-serif;
+                        font-size: 20px;
+                        }
+        .ex3>div>a:hover {
+                        font-weight: bold;
+                        color: #0E1051;
+                        cursor: pointer;
+                        }
 
 /* 박스2 설정 */
 .box2 {
@@ -1224,7 +1228,7 @@ img {
                 }
 .name2 {
         position: absolute;
-        top: 22%;
+        top: 20%;
         right: 15%;
         font-family: 'Megrim', cursive;
         font-size: 36px;
@@ -1233,7 +1237,7 @@ img {
         }
 .pho1>img {
         position: absolute;
-        top: 23%;
+        top: 20%;
         right: 5%;
         width: 22px;
         height: 22px;
@@ -1839,59 +1843,74 @@ img {
                 font-size: 14px;
                 margin-left: 8%;
                 }
-        .ex1{
-                width: 100%;
-                height: 0%;
-        }
-        .ex_p {
-                position: absolute;
-                margin-top: -35%;
-                right: 7%;
-                width: 85%;
-                font-size: 15px;
-                letter-spacing: 1px;
-                line-height: 35px;
-                font-family: 'Istok Web', sans-serif;
-                text-align: start;
+                .name1{
+                        left: 0;
+                        margin-top: 7%;
+                        height: 18%;
+                
                 }
-        
-        .ex_img {
-                display: none;
+                .ex1{
+                        display: flex;
+                        justify-content: space-around;
+                        top: 5%;
+                        text-align: center;
+                        align-items: top;
+                        height: 30%;
+                        width: 100%;
                 }
-        .ex2{
-                display: flex;
-        justify-content: space-between;
-        width: 95%;
-}
-        .ex_p2 {
-                overflow: hidden;
-                position: absolute;
-                bottom: 35%;
-                font-size: 13px;
-                line-height: 35px;
-                font-family: 'Istok Web', sans-serif;
-                left: -97%;
-                width: 150%;
-                }
-        .ex_p2 em {
-                color: #a39df2;
-                font-style: normal;
-                font-weight: bold;
-                }
-        .ex_img2 {
-                width: 158px;
-                height: 199px;
-                padding-top: 30%;
-                }
+                .ex_p {
+                        font-size: 18px;
+                        letter-spacing: 1px;
+                        line-height: 40px;
+                        font-family: 'Istok Web', sans-serif;
+                        text-align: end;
+                        margin-right: 3%;
+                        }
+                .ex_img {
+                        display: none;
+                        }
+                .ex2{
+                        width: 100%;
+                        height: 35%;
+                                position: relative;
+                                display: flex;
+                                justify-content: space-around;
+                                text-align: left;
+                                align-items: top;
+                                bottom: 0;
+                        }
+                
+                .ex_p2 {
+                        overflow: hidden;
+                        font-size: 16px;
+                        line-height: 30px;
+                        letter-spacing: 1px;
+                        font-family: 'Istok Web', sans-serif;
+                        margin-left: -190%;
+                        width: 280%;
+                        height: 70%;
+                        margin-top: 15%;
+                        margin-right: 0px;
+                        }
+                .ex_p2 em {
+                        color: #a39df2;
+                        font-style: normal;
+                        font-weight: bold;
+                        }
+                .ex_img2 {
+                        width: 198px;
+                        height: 239px;
+                        margin-top: -8%;
+                        }
         .ex3 {
                 position: absolute;
                 right: 3%;
-                bottom: 16%;
+                bottom: 10%;
                 width: 193%;
                 height: 19%;
                 border-radius: 10px;
                 background: rgba(186, 184, 208, 0.60);
-                }
+                }767
 .ex3>p {
         font-family: 'Katibeh', cursive;
         font-size: 40px;
@@ -1902,7 +1921,7 @@ img {
         border-bottom: 1px solid #fff;
         margin-top: 2%;
         padding-bottom: 3%;
-        width: 87%;
+        width: 93%;
         margin-left: 3%;
         }
 .ex3>div {
@@ -2017,7 +2036,7 @@ img {
                         }
         .name2 {
                 position: absolute;
-                top: 20.5%;
+                top: 20%;
                 right: 20%;
                 font-family: 'Megrim', cursive;
                 font-size: 36px;
@@ -2026,7 +2045,7 @@ img {
                 }
         .pho1>img {
                 position: absolute;
-                top: 22%;
+                top: 21%;
                 right: 5%;
                 width: 22px;
                 height: 22px;
@@ -2546,7 +2565,7 @@ img {
         position: absolute;
         right: 14%;
         bottom: 0;
-        font-size: 30px;
+        font-size: 25px;
         font-family: 'Inria Serif', serif;
         height: 16%;
         }
@@ -2574,11 +2593,11 @@ img {
         background-color: #d9d9d9;
         justify-content: center;
         align-items: center;
-        width: 40px;
-        height: 40px;
-        border-radius: 20px;
+        width: 36px;
+        height: 36px;
+        border-radius: 18px;
         }
-.letbot img{margin-bottom: 6px;}
+.letbot img{margin-bottom: 3px;}
 .letbot li:hover{
                 cursor: pointer;
                 background-color: #8f8cae;
@@ -2619,36 +2638,36 @@ img {
         .profile_right{
                 position: relative;
                 width: 100%;
-                height: 50%;
+                height: 55%;
                 left: 0;
-                top: 0;
+                margin-top: -3%;
         }
         .name1{
                 position: absolute;
                 left: 0;
                 top: 7%;
-                height: 45%;
+                height: 60%;
                 overflow: hidden;
         }
         .en_name{
                 font-family: 'Jacques Francois', serif;
-                font-size: 60px;
+                font-size: 55px;
                 color: #0E1051;
                 letter-spacing: 8px;
 
                 }
         .ko_name {
                 font-family: 'Istok Web', sans-serif;
-                font-size: 20px;
+                font-size: 17px;
                 z-index: 10;
 
                 }
         .line {
                 position: absolute;
-                border: 7px solid #a39df2;
-                width: 62%;
-                margin-left: 11%;
-                margin-top: -1%;
+                border: 5px solid #a39df2;
+                width: 57%;
+                margin-left: 11.5%;
+                margin-top: 0%;
                 opacity: 40%;
                 z-index: 1;
                 }
@@ -2704,11 +2723,10 @@ img {
                 padding-top: 5%;
                 }
         .ex3 {
-
                 right: 2.5%;
                 bottom: 8%;
                 width: 95%;
-                height: 35%;
+                height: 30%;
                 border-radius: 10px;
                 background: rgba(186, 184, 208, 0.60);
                 }
@@ -2720,7 +2738,7 @@ img {
                         justify-content: center;
                         align-items: center;
                         border-bottom: 1px solid #fff;
-                        margin-top: 2%;
+
                         padding-bottom: 3%;
                         width: 86%;
                         margin-left: 2%;
@@ -2835,7 +2853,7 @@ img {
                         }
         .name2 {
                 position: absolute;
-                top: 22%;
+                bottom: 19%;
                 right: 23%;
                 font-family: 'Megrim', cursive;
                 font-size: 36px;
@@ -2844,7 +2862,7 @@ img {
                 }
         .pho1>img {
                 position: absolute;
-                top: 23%;
+                top: 21%;
                 right: 6%;
                 width: 22px;
                 height: 22px;
