@@ -90,7 +90,7 @@ $(document).ready(function(){
                                 if(d<6) d++;
                                 // console.log(d)
 
-                            $('.daily ul').stop().animate({'right': -(ad+25)*d},1000)
+                            $('.daily ul').stop().animate({'right': -(ad+20)*d},1000)
                             })
 
 
