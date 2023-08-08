@@ -240,4 +240,34 @@ $(document).ready(function(){
                                                 });
 
 
+
+
+                            // ham 클릭시 메뉴 나오게 하기
+                            $('.ham img').click(function(){
+
+                                        $('.menu').css({'z-index':90}) 
+                                        $('.ham span').show()
+                            
+                            });
+                            $('.ham span').click(function(){
+
+                                $(this).css('display','none')
+                                $('.menu').css({'z-index':-1}) 
+                            })
+
+                            // ham 클릭시 메뉴 나오게 하기
+                            $('.ham img').click(function(){
+
+                                $('.n2').css({'display':'block'}) 
+                                $('.n2').css({'z-index':98})
+                                $('.ham span').show()
+                    
+                    });
+                    $('.ham span').click(function(){
+
+                        // $(this).css('display','none')
+                        $('.n2').css({'z-index':-1})
+                    })
+
+
                             }) // 제이쿼리 끝

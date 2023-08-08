@@ -46,10 +46,28 @@ img {
         overflow: hidden;
 }
 
+/* 햄버거버튼 */
+.ham{
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        z-index: 99;
+        display: none;
+}
+.ham{cursor: pointer;}
+
+.ham span {width: 100%;
+height: 100%;
+/* background-color: red; */
+position: absolute;
+left: 0;
+top: 0;
+display: none;}
+
 /* 헤더네비 설정 */
 .menu {
         position: absolute;
-        bottom: 8%;
+        bottom: 6%;
         left: 10%;
         }
 .menu ul {}
@@ -718,15 +736,16 @@ img {
 .filmo_right {
                 position: absolute;
                 left: 400px;
-                top: -50px;
+                bottom: -50px;
                 width: 1300px;
                 height: 730px;
                 }
-                .filmo_right ul li iframe{
+.filmo_right ul li iframe{
                         width: 1300px;
-                height: 730px;
+                        height: 730px;
                 }
-.filmo_right ul li.on6 {z-index: 10;}
+.filmo_right ul li.on6 {z-index: 10;
+bottom: 0;}
 .video1 ul li{z-index: 1;}
 .video1{
         position: absolute;
@@ -764,7 +783,7 @@ img {
         position: relative;
         width: 100%;
         height: 100vh;
-        background-color: rgba(0, 0, 0, 0.50);
+        background-color: gray;
         overflow: hidden;
         box-sizing: border-box;
         display: flex;
@@ -828,7 +847,16 @@ img {
 .bottom_brand li img:hover{transition: all 0.2s linear;}
 .bottom_brand li:hover img {transform: scale(1.2);}
 
-
+/* 푸터설정 */
+.footer{
+        background-color: #333;
+        height: 80px;
+        font-size: 16px;
+        color: #fff;
+        text-align: center;
+        padding-top: 40px;
+}
+.footer1{margin-bottom: 5px;}
 
 
 /* 1. 768px~1024px */
@@ -869,7 +897,7 @@ img {
         left: 10%;
         }
 .n2     {
-        display: none;
+
         position: absolute;
         position: fixed;
         top: 2%;
@@ -877,8 +905,9 @@ img {
         z-index: 98;
         width: 73%;
         }
+.n2 ul{margin-left: 300px;}
 .n2 li {
-        display: none;
+
         /* background-color: aqua; */
         width: 73px;
         height: 20px;
@@ -890,14 +919,14 @@ img {
         padding-top: 2px;
         }
 .n2 li em {
-        display: none;
+
         display: flex;
         justify-content: center;
         align-items: center;
         font-weight: bold;
         }
 .n2 li span {
-        display: none;
+
         width: 2%;
         left: 0px;
         top: -1px;
@@ -1457,8 +1486,8 @@ img {
                 border-left: 1px solid #5a5a5a;
                 margin-left: 3%;
                 padding-left: 3%;
-                padding-bottom: 5%;
-                padding-top: 2%;
+                padding-bottom: 5px;
+                padding-top: 2px;
                 font-size: 16px;
                 }
 .filmo_left>div>p:hover {
@@ -1477,7 +1506,7 @@ img {
 .filmo_right {
                 position: absolute;
                 left: -3.5%;
-                top: 32%;
+                bottom: -250px;
                 width: 100%;
                 height: 100%;
                 }
@@ -1523,7 +1552,7 @@ img {
         position: relative;
         width: 100%;
         height: 100vh;
-        background-color: rgba(0, 0, 0, 0.50);
+        background-color: grey;
         overflow: hidden;
         box-sizing: border-box;
         }
@@ -1575,7 +1604,16 @@ img {
 .bottom_brand li:hover img {transform: scale(1.2);}
 
 }
-
+/* 푸터설정 */
+.footer{
+        background-color: #333;
+        height: 80px;
+        font-size: 14px;
+        color: #fff;
+        text-align: center;
+        padding-top: 40px;
+}
+.footer1{margin-bottom: 5px;}
 
 
 
@@ -1588,7 +1626,8 @@ img {
 .boxA {
         display: flex;
         width: 100%;
-        height: 100vh
+        height: 100vh;
+        background-color: #fff;
         }
 .boxA1 {
         display: flex;
@@ -1597,6 +1636,7 @@ img {
         left: 0;
         top: 0;
         height: 100%;
+        background-color: #fff;
         }
 .boxA2 {
         width: 78%;
@@ -1605,19 +1645,38 @@ img {
         z-index: 99;
 }
 
+/* 햄버거버튼 */
+.ham{
+        position: fixed;
+        left: 10px;
+        top: 10px;
+        z-index: 99;
+        display: block;
+}
+.ham{cursor: pointer;}
+
+.ham span {width: 100%;
+height: 100%;
+/* background-color: red; */
+position: absolute;
+left: 0;
+top: 0;
+display: none;}
+
 /* 헤더네비 설정 */
 .menu {
-        display: none;
+        z-index: -1;
         position: absolute;
-        bottom: 8%;
-        left: 10%;
+        top: 4%;
+        left: 8%;
+        background-color: #fff;
         }
 .menu ul {}
 .menu li {
-        width: 150px;
+        width: 130px;
         height: 35px;
         margin-bottom: 25px;
-        font-size: 16px;
+        font-size: 14px;
         color: #1a1a1a;
         display: flex;
         justify-content: center;
@@ -1656,34 +1715,33 @@ img {
         display: none;
         position: absolute;
         position: fixed;
-        top: 3.5%;
-        right: 1%;
-        z-index: 98;
+        top: 2.5%;
+        z-index: -1;
         }
 .n2 ul {
-        display: none;
+       
         display: flex;
 }
 .n2 li {
-        display: none;
+        
         /* background-color: aqua; */
-        width: 120px;
+        width: 80px;
         height: 35px;
-        font-size: 16px;
+        font-size: 15px;
         color: #585858;
         cursor: pointer;
         position: relative;
         margin-right: 10px;
         }
 .n2 li em {
-        display: none;
+        
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 font-weight: bold;
                 }
 .n2 li span {
-        display: none;
+        
                 width: 3%;
                 left: 0px;
                 top: -5px;
@@ -1697,39 +1755,39 @@ img {
                 box-shadow: 1px 1px 1px #6a6a6a;
                 }
 .n2 ul li:nth-child(4) span {
-        display: none;
-        width: 2.5%;
+        
+        width: 2%;
 }
 .n2 ul li:nth-child(4) {
-        display: none;
-        width: 170px;
+       
+        width: 120px;
 }
 .n2 ul li:hover {
                 font-weight: bold;
                 color: #fff;
-                display: none;
+                
                 }
 .n2 ul li:hover span {
-        display: none;
+        
         width: 100%;
 }
 .fi em:hover span {
-        display: none;
+        
         width: 100%;
 }
 .n2 ul li.on2 span {
-        display: none;
+       
         width: 100%;
 }
 .n2 ul li.on2 em {
                 color: #fff;
                 font-weight: bold;
-                display: none;
+                
                 }
 .n2 ul li.on2{
                 color: #fff;
                 font-weight: bold;
-                display: none;
+                
 }
 
 
@@ -1738,7 +1796,7 @@ img {
 .rowoon {
         position: absolute;
         right: 3%;
-        top: 3%;
+        top: 4%;
         height: 80%;
         }
 .letbot {
@@ -1758,6 +1816,7 @@ img {
         background-position: center;
         background-size: cover;
         transform: translateX(-18%);
+        z-index: 10;
         }
 
 /* of sf9, 이미지 설정 */
@@ -1792,8 +1851,6 @@ img {
         background-size: cover;
         }
 
-.roro{width: 100%;}
-
 
         .box1 {
                 position: relative;
@@ -1801,6 +1858,7 @@ img {
                 right: 0px;
                 height: 100vh;
                 display: flex;
+                background-color: #fff;
                 }
 
         .title1{
@@ -2260,8 +2318,8 @@ img {
                         border-left: 1px solid #5a5a5a;
                         margin-left: 5%;
                         padding-left: 6%;
-                        padding-bottom: 4%;
-                        padding-top: 4%;
+                        padding-bottom: 4px;
+                        padding-top: 4px;
                         font-size: 12px;
                         }
         .filmo_left>div>p:hover {
@@ -2280,7 +2338,7 @@ img {
         .filmo_right {
                         position: absolute;
                         left: -2.5%;
-                        top: 27%;
+                        bottom: -210px;
                         width: 100%;
                         height: 100%;
                         }
@@ -2326,7 +2384,7 @@ img {
                 position: relative;
                 width: 100%;
                 height: 100vh;
-                background-color: rgba(0, 0, 0, 0.50);
+                background-color: grey;
                 overflow: hidden;
                 box-sizing: border-box;
                 }
@@ -2404,7 +2462,8 @@ img {
 .boxA {
         display: flex;
         width: 100%;
-        height: 100vh
+        height: 100vh;
+        background-color: #fff;
         }
 .boxA1 {
         display: flex;
@@ -2414,6 +2473,7 @@ img {
         top: 0;
         height: 100%;
         overflow: hidden;
+        background-color: #fff;
         }
 .boxA2 {
         width: 75%;
@@ -2422,19 +2482,40 @@ img {
         z-index: 99;
 }
 
+/* 햄버거버튼 */
+.ham{
+        position: fixed;
+        left: 10px;
+        top: 10px;
+        z-index: 99;
+        display: block;
+}
+.ham{cursor: pointer;}
+
+.ham span {width: 100%;
+height: 100%;
+/* background-color: red; */
+position: absolute;
+left: 0;
+top: 0;
+display: none;}
+
+
+
 /* 헤더네비 설정 */
 .menu {
-        display: none;
+        z-index: -1;
         position: absolute;
-        bottom: 8%;
+        top: 4%;
         left: 10%;
+        background-color: #fff;
         }
 .menu ul {}
 .menu li {
-        width: 150px;
-        height: 35px;
+        width: 110px;
+        height: 32px;
         margin-bottom: 25px;
-        font-size: 16px;
+        font-size: 14px;
         color: #1a1a1a;
         display: flex;
         justify-content: center;
@@ -2473,38 +2554,37 @@ img {
         display: none;
         position: absolute;
         position: fixed;
-        top: 3.5%;
-        right: 1%;
-        z-index: 98;
+        top: 1.5%;
+        z-index: -1;
         }
 .n2 ul {
-        display: none;
+
         display: flex;
 }
 .n2 li {
-        display: none;
+
         /* background-color: aqua; */
-        width: 120px;
+        width: 60px;
         height: 35px;
-        font-size: 16px;
+        font-size: 12px;
         color: #585858;
         cursor: pointer;
         position: relative;
-        margin-right: 10px;
+        margin-right: 5px;
         }
 .n2 li em {
-        display: none;
+
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 font-weight: bold;
                 }
 .n2 li span {
-        display: none;
+
                 width: 3%;
                 left: 0px;
                 top: -5px;
-                height: 85%;
+                height: 70%;
                 background-color: #8f8cae;
                 display: block;
                 position: absolute;
@@ -2514,39 +2594,39 @@ img {
                 box-shadow: 1px 1px 1px #6a6a6a;
                 }
 .n2 ul li:nth-child(4) span {
-        display: none;
-        width: 2.5%;
+
+        width: 2%;
 }
 .n2 ul li:nth-child(4) {
-        display: none;
-        width: 170px;
+
+        width: 85px;
 }
 .n2 ul li:hover {
                 font-weight: bold;
                 color: #fff;
-                display: none;
+
                 }
 .n2 ul li:hover span {
-        display: none;
+
         width: 100%;
 }
 .fi em:hover span {
-        display: none;
+
         width: 100%;
 }
 .n2 ul li.on2 span {
-        display: none;
+
         width: 100%;
 }
 .n2 ul li.on2 em {
                 color: #fff;
                 font-weight: bold;
-                display: none;
+
                 }
 .n2 ul li.on2{
                 color: #fff;
                 font-weight: bold;
-                display: none;
+
 }
 
 
@@ -2607,8 +2687,9 @@ img {
         height: 50%;
         background-image: url(../img/pro2.png) ;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: top;
         background-size: cover;
+        z-index: 9;
         }
 .roro{
         width: auto;
@@ -2638,6 +2719,7 @@ img {
                 height: 55%;
                 left: 0;
                 margin-top: -3%;
+                background-color: #fff;
         }
         .name1{
                 position: absolute;
@@ -3081,8 +3163,8 @@ img {
                         border-left: 1px solid #5a5a5a;
                         margin-left: 7%;
                         padding-left: 7%;
-                        padding-bottom: 4%;
-                        padding-top: 5%;
+                        padding-bottom: 3px;
+                        padding-top: 5px;
                         font-size: 12px;
                         }
         .filmo_left>div>p:hover {
@@ -3101,7 +3183,7 @@ img {
         .filmo_right {
                         position: absolute;
                         left: -2%;
-                        top: 26%;
+                        bottom: -200px;
                         width: 100%;
                         height: 100%;
                         }
@@ -3147,7 +3229,7 @@ img {
                 position: relative;
                 width: 100%;
                 height: 100vh;
-                background-color: rgba(0, 0, 0, 0.50);
+                background-color: gray;
                 overflow: hidden;
                 box-sizing: border-box;
                 }
@@ -3213,3 +3295,13 @@ img {
 
 
 }
+/* 푸터설정 */
+.footer{
+        background-color: #333;
+        height: 80px;
+        font-size: 12px;
+        color: #fff;
+        text-align: center;
+        padding-top: 40px;
+}
+.footer1{margin-bottom: 5px;}
